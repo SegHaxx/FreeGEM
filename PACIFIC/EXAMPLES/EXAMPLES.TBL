@@ -1,0 +1,109 @@
+table 1 0
+Pacific C Examples-
+Use the programs in this directory to explore the features of the
+Pacific C compiler.
+_
+ARGS.C      demonstrates use of the "argc" and "argv" parameters
+            to main() to iterate through command line arguments
+            to a program.  You can also use this program to test
+            the effect of the PACC "-R" option and the PPD option
+            "_getargs() wildcard expansion".
+_
+CHK.C       simple file checksum utility.  Generates a 32-bit
+            checksum for each file passed on the command line.
+_
+EXITFUNC.C  demonstrates use of the atexit() function to install
+            a user function which will be automatically executed
+            when your program terminates.
+_
+FCALC.C     simple floating point calculator program.  Compile
+            with "Use floating point library" enabled in PPD, or
+            the PACC -lf option.  For better performance with a
+            floating point co-processor, enable hardware floating
+            point in the "Memory model and chip type ..." dialog
+            or use the PACC -7 option.
+_
+FULLPATH.C  demonstrates the use of the _fullpath global variable
+            to determine the directory and name of the currently
+            executing program.  This program should be compiled
+            using the LARGE memory model because _fullpath is not
+            available in the small model library.
+_
+HELLO.C     the infamous hello world program known to programmers
+            everywhere!
+_
+HEXD.C      a handy HEX dump utility which you can use to examine
+            binary files and other mysteries.  Uses <stdio.h>
+            functions to read input files, uses argc and argv
+            to process the command line arguments.
+_
+KEYRATE.C   another useful utility, which can be used to set the
+            typematic rate (repeat speed and delay) on PC/AT type
+            keyboards.  Demonstrates the use of Pacific C "port"
+            variables to perform hardware specific tasks.
+_
+MOUSE.C     Pacific C mouse driver "glue" code.  This is not a
+            standalone program, it should be compiled to .OBJ
+            and linked with user application code.  The header
+            file "mouse.h" contains the extern declarations for
+            the routines and data structures contained in MOUSE.C
+            The routines in this module can be used to interface
+            to any standard mouse driver which uses the INT 33H
+            interface.  To compile MOUSE.C use the PACC command
+            PACC -O -Zg -C MOUSE.C or the PPD "Compile to OBJ" menu
+            item.
+_
+MOUSE.H     header file for MOUSE.C routines.  Examine this file
+            to determine what mouse functions are available.
+_
+MOUSEX.C    example code using the MOUSE.C interface routines.
+            Use this as the starting point for your own mouse
+            driven applications.  To compile using PACC, use the
+            command PACC MOUSEX.C MOUSE.OBJ.  To compile with PPD,
+            use the MOUSEX.PRJ multi-file project.
+_
+MOUSEX.PRJ  PPD project file used to compile MOUSEX.C and MOUSE.C
+            together as a single project.  Use this a a starting
+            point for your own multi-file projects.  If you did not
+            install Pacific C in the default C:\PACIFIC directory, you
+            may need to manually edit some of the path names in
+            this file.  Do not edit this MOUSEX.PRJ with the MS-DOS
+            EDIT command because EDIT converts tabs to spaces!
+_
+PRINTENV.C  demonstrates use of the getenv() function to return
+            the value of a DOS environment variable.  Also gives
+            an example of how to iterate through the command line
+            arguments passed to main
+_
+QSORTEX.C   contains example code using the qsort() function to
+            sort the contents of an array.
+_
+READDIR.C   gives an example of a practical use of the intdos()
+            function to read an MS-DOS directory.  The user gives
+            a search wildcard and the function putdir() will print
+            all matches.
+_
+READDIR2.C  is an alternative version of READDIR.C which uses the
+            msdos() function instead of intdos().  Note the use of
+            variable arguments with msdos() so only those arguments
+            actually required are passed.
+_
+SIEVE.C     is an implementation of the Sieve of Eratosthenes prime
+            number generator.
+_
+TALK.C      is the most complex of the demonstration programs.  It
+            is a simple terminal program which directly drives the
+            PC serial ports.  The serial port driver in talk is an
+            example of the the use of port variables and interrupt
+            functions to write an interrupt driven device driver.
+_
+U2D.C       UNIX to DOS text file conversion utility.  Converts UNIX
+            style text files with only newline (0AH) characters on
+            the end of lines to DOS style text files.
+_
+USAGE.C     utility which calculates the amount of disk space used
+            by a group of files or directories.  Includes recursive
+            directory scanning code which could be used as the core
+            of an "XTREE" type utility.  Exercise: modify the code
+            to determine the block size of the disk using MS-DOS
+            calls instead of requiring block size as a user option.

@@ -1,0 +1,2678 @@
+INDEX 153 100 C Library Reference
+10309 14 _EXIT
+23419 74 _GETARGS
+25 24 ACOS
+728 20 ASCTIME
+25 24 ASIN
+1183 24 ASSERT
+25 24 ATAN
+25 24 ATAN2
+2108 17 ATOF
+2108 17 ATOI
+2108 17 ATOL
+2539 26 BDOS
+3318 21 BIOS
+3980 16 CALLOC
+10999 13 CEIL
+4385 19 CGETS
+4863 20 CHDIR
+5303 23 CHMOD
+6040 16 CLOSE
+6394 18 CLREOF
+6394 18 CLRERR
+6904 13 COS
+7097 11 COSH
+4385 19 CPUTS
+7305 23 CREAT
+8152 27 CTIME
+8645 8 DI
+8780 16 DUP
+8645 8 EI
+9171 20 EXECL
+9171 20 EXECV
+9794 15 EXIT
+10592 15 EXP
+10999 13 FABS
+11319 15 FCLOSE
+11643 18 FEOF
+11643 18 FERROR
+12068 16 FFLUSH
+12442 20 FGETC
+12978 15 FGETS
+13521 14 FILENO
+10999 13 FLOOR
+13853 89 FOPEN
+17368 19 FPRINTF
+17936 17 FPUTC
+18404 14 FPUTS
+18683 23 FREAD
+19305 14 FREE
+19561 17 FREOPEN
+20007 18 FREXP
+20656 18 FSCANF
+21190 46 FSEEK
+22578 16 FTELL
+22942 18 FWRITE
+26292 12 GETC
+26627 21 GETCH
+27235 17 GETCHAR
+26627 21 GETCHE
+27678 18 GETCWD
+28141 33 GETENV
+29479 15 GETS
+29797 16 GETUID
+30151 20 GETW
+30791 22 GMTIME
+31573 11 INP
+31896 30 INT86
+31896 30 INT86X
+31896 30 INTDOS
+31896 30 INTDOSX
+33193 42 ISALNUM
+33193 42 ISALPHA
+33193 42 ISASCII
+34292 13 ISATTY
+33193 42 ISCNTRL
+33193 42 ISDIGIT
+33193 42 ISLOWER
+33193 42 ISPUNCT
+33193 42 ISSPACE
+33193 42 ISUPPER
+34686 15 KBHIT
+20007 18 LDEXP
+30791 22 LOCALTIME
+10592 15 LOG
+10592 15 LOG10
+34973 52 LONGJMP
+36522 18 LSEEK
+37027 19 MALLOC
+37617 25 MEMCMP
+37617 25 MEMCPY
+37617 25 MEMSET
+38570 18 MKDIR
+39003 29 MSDOS
+39003 29 MSDOSCX
+39984 100 OPEN
+31573 11 OUTP
+10592 15 POW
+43092 92 PRINTF
+46633 14 PUTC
+26627 21 PUTCH
+46911 14 PUTCHAR
+47125 15 PUTS
+47417 16 PUTW
+47765 38 QSORT
+48915 15 RAND
+49182 20 READ
+49819 20 REALLOC
+50476 15 REMOVE
+50753 15 RENAME
+51083 17 REWIND
+38570 18 RMDIR
+51532 16 SBRK
+52010 79 SCANF
+55180 13 SEGREAD
+57382 21 SET_VECTOR
+55885 36 SETBUF
+55439 13 SETJMP
+55667 14 SETUID
+55885 36 SETVBUF
+58096 26 SIGNAL
+59184 13 SIN
+7097 11 SINH
+59393 21 SPAWNL
+59393 21 SPAWNV
+59393 21 SPAWNVE
+60155 19 SPRINTF
+60759 14 SQRT
+61335 18 SRAND
+60952 16 SSCANF
+61815 48 STAT
+63764 29 STRCAT
+65148 18 STRCHR
+63764 29 STRCMP
+63764 29 STRCPY
+63764 29 STRLEN
+63764 29 STRNCAT
+63764 29 STRNCMP
+63764 29 STRNCPY
+65148 18 STRRCHR
+65690 24 SYSTEM
+66372 13 TAN
+7097 11 TANH
+66535 19 TIME
+67121 19 TOASCII
+67121 19 TOLOWER
+67121 19 TOUPPER
+67635 22 UNGETC
+26627 21 UNGETCH
+68117 15 UNLINK
+68526 47 VA_ARG
+68526 47 VA_END
+68526 47 VA_START
+43092 92 VPRINTF
+70551 61 WRITE
+%ACOS
+%ASIN
+%ATAN
+%ATAN2
+
+SYNOPSIS
+     #include  <math.h>
+
+     double    acos(double f)
+     double    asin(double f)
+     double    atan(double f)
+
+     double    atan2(double x, double y)
+
+DESCRIPTION
+
+     These functions are the converse of the  trignometric  func-
+     tions  cos, sin and tan. Acos and asin are undefined for ar-
+     guments whose absolute value is greater than  1.0.  The  re-
+     turned value is in radians, and always in the range -pi/2 to
+     +pi/2, except for þ#cos(), which returns a value in the  range
+     0  to  pi.   þ%Atan2() returns the inverse tan of x/y but uses
+     the signs of its arguments to return a value  in  the  range
+     -pi to +pi.
+
+SEE ALSO
+     sin, cos, tan
+
+%ASCTIME
+
+SYNOPSIS
+     #include  <time.h>
+
+     char *    asctime(time_t t)
+
+DESCRIPTION
+
+     þ'Asctime() takes the broken down time pointed to by its argu-
+     ment,  and  returns  a  26  character  string describing the
+     current date and time in the format
+
+           Sun Sep 16 01:03:52 1973\n\0
+
+     Note the newline at the end of the string. The width of each
+     field in the string is fixed.
+
+SEE ALSO
+     ctime, time, gmtime, localtime
+
+%ASSERT
+
+SYNOPSIS
+     #include  <assert.h>
+
+     void      assert(int e)
+
+DESCRIPTION
+
+     This macro is used for debugging purposes; the basic  method
+     of  usage  is  to place assertions liberally throughout your
+     code at points where correct operation of the  code  depends
+     upon  certain  conditions  being true initially. An þ&assert()
+     may be used to ensure  at  run  time  that  that  assumption
+     holds. For example, the following statement asserts that the
+     pointer tp is non-null:
+
+           assert(tp);
+
+     If at run time the expression evaluates to false,  the  pro-
+     gram  will  abort with a message identifying the source file
+     and line number of the assertion, and the expression used as
+     an argument to it. A fuller discussion of the uses of assert
+     is impossible in limited space, but it is closely linked  to
+     methods of proving program correctness.
+%ATOF
+%ATOI
+%ATOL
+
+SYNOPSIS
+     #include  <math.h>
+
+     double    atof(char * s)
+     int       atoi(char * s)
+
+     #include  <stdlib.h>
+
+     long      atol(char * s)
+
+DESCRIPTION
+
+     These routines convert a  decimal  number  in  the  argument
+     string  s  into  a  double  float,  integer  or long integer
+     respectively. Leading blanks are skipped over. In  the  case
+     of þ$atof(), the number may be in scientific notation.
+%BDOS
+
+SYNOPSIS
+     #include  <cpm.h>
+
+     char      bdos(int func, int arg)
+
+     short bdoshl(int func, int arg)(CP/M-80 only)
+
+DESCRIPTION
+
+     þ$Bdos() calls the CP/M BDOS with func in register C  (CL  for
+     CP/M-86)  and  arg  in register DE (DX). The return value is
+     the byte returned by the BDOS in register A (AX).   þ&Bdoshl()
+     is  the  same, except that the return value is the value re-
+     turned by the BDOS in HL.  Constant values for  the  various
+     BDOS function values are defined in cpm.h.
+
+
+These functions should be avoided except in  programs  which  are
+     not  intended  to  be used on an operating system other than
+     CP/M. The standard I/O routines are to be  preferred,  since
+     they are portable.
+
+SEE ALSO
+     bios, msdos
+
+%BIOS
+
+SYNOPSIS
+     #includ   <cpm.h>
+
+     char bios(int n, int a1, int a2)
+
+DESCRIPTION
+
+     This function will call the n'th bios entry point (cold boot
+     =  0,  warm boot = 1, etc.) with register BC (CX) set to the
+     argument a1 and DE (DX) set to the argument a2.  The  return
+     value  is  the  contents  of  register A (AX) after the bios
+     call. On CP/M-86, bdos function 50 is used  to  perform  the
+     bios call.  This function should not be used unless unavoid-
+     able, since it is highly  non-portable.  There  is  even  no
+     guarantee  of  portability  of  bios calls between differing
+     CP/M systems.
+
+SEE ALSO
+     bdos
+
+%CALLOC
+
+SYNOPSIS
+     #include  <stdlib.h>
+
+     char * calloc(size_t cnt, size_t size)
+
+DESCRIPTION
+
+     þ&Calloc() attempts to obtain a contiguous  block  of  dynamic
+     memory which will hold cnt objects, each of length size. The
+     block is filled with zeroes.  A pointer to the block is  re-
+     turned, or 0 if the memory could not be allocated.
+
+SEE ALSO
+     brk, sbrk, malloc, free
+
+%CGETS
+%CPUTS
+
+SYNOPSIS
+     #include  <conio.h>
+
+     char *    cgets(char * s)
+
+     void      cputs(char * s)
+
+DESCRIPTION
+
+     þ%Cputs() will read one line of input from  the  console  into
+     the  buffer  passed  as  an argument. It does so by repeated
+     calls to þ&getche().  þ%Cputs() writes its  argument  string  to
+     the console, outputting carriage returns before each newline
+     in the string. It calls þ%putch() repeatedly.
+
+SEE ALSO
+     getch, getche, putch
+
+%CHDIR
+
+SYNOPSIS
+     #include  <sys.h>
+
+     int       chdir(char * s)
+
+DESCRIPTION
+
+     This function is availble only under MS-DOS. It changes  the
+     current working directory to the path name supplied as argu-
+     ment. This path name be be absolute, as in A:\FRED, or rela-
+     tive, as in ..\SOURCES.  A return value of -1 indicates that
+     the requested change could not be performed.
+
+
+
+
+SEE ALSO
+     mkdir, rmdir, getcwd
+
+%CHMOD
+
+SYNOPSIS
+     #include  <stat.h>
+
+     int       chmod(char * name, int )
+     char *    name;
+     int       mode;
+
+DESCRIPTION
+
+     This function changes the file attributes (or modes) of  the
+     named  file.   The argument name may be any valid file name.
+     The mode argument may include all bits defined in þ$stat.þ!h ex-
+     cept  those  relating to the type of the file, e.g. S_IFDIR.
+     Note however that not all bits  may  be  changed  under  all
+     operating  systems,  e.g. neither DOS nor CP/M permit a file
+     to be made unreadable, thus even if mode  does  not  include
+     S_IREAD  the  file  will  still be readable (and þ$stat() will
+     still return S_IREAD in flags).
+
+SEE ALSO
+     stat, creat
+
+%CLOSE
+
+SYNOPSIS
+     #include  <unixio.h>
+
+     int close(int fd)
+
+DESCRIPTION
+
+     This routine  closes  the  file  associated  with  the  file
+     descriptor fd, which will have been previously obtained from
+     a call to þ$open(). þ%Close() returns 0 for a successful  close,
+     or -1 otherwise.
+
+SEE ALSO
+     open, read, write, seek
+
+%CLRERR
+%CLREOF
+
+SYNOPSIS
+     #include  <stdio.h>
+     void clrerr(FILE * stream)
+     void clreof(FILE * stream)
+
+DESCRIPTION
+
+     These are macros, defined in stdio.h, which reset the  error
+     and end of file flags respectively for the specified stream.
+     They should be used with care; the major valid  use  is  for
+     clearing an EOF status on input from a terminal-like device,
+     where it may be valid to continue to read after having  seen
+     an end-of-file indication.
+
+SEE ALSO
+     fopen, fclose
+
+%COS
+
+SYNOPSIS
+     #include  <math.h>
+
+     double    cos(double f)
+
+DESCRIPTION
+
+     This function yields the cosine of its argument.
+
+SEE ALSO
+     sin, tan, asin, acos, atan
+
+%COSH
+%SINH
+%TANH
+
+SYNOPSIS
+     #include  <math.h>
+
+     double    cosh(double f)
+     double    sinh(double f)
+     double    tanh(double f)
+
+DESCRIPTION
+
+     These functions implement the hyperbolic trig functions.
+%CREAT
+
+SYNOPSIS
+     #include  <stat.h>
+
+     int       creat(char * name, int mode)
+
+DESCRIPTION
+
+     This routine attempts to create the file named by name.   If
+     the  file  exists  and  is writeable, it will be removed and
+     re-created. The return value is -1 if the create failed,  or
+     a  small non-negative number if it succeeded. This number is
+     a valuable token which must be used to write to or close the
+     file  subsequently.   Mode  is used to initialize the attri-
+     butes of the created file.  The allowable bits are the  same
+     as for þ%chmod(), but for Unix compatibility it is recommended
+     that a mode of 0666 or 0600 be used. Under CP/M the mode  is
+     ignored  - the only way to set a files attributes is via the
+     þ%chmod() function.
+
+SEE ALSO
+     open, close, read, write, seek, stat, chmod
+
+%CTIME
+
+SYNOPSIS
+     #include  <time.h>
+
+     char *    ctime(time_t t)
+
+DESCRIPTION
+
+     þ%Ctime() converts the time in seconds pointed to by its argu-
+     ment  to a string of the same form as described for asctime.
+     Thus the following program prints the current time and date:
+
+
+       #include    <time.h>
+
+       main()
+       {
+             time_t      t;
+
+             time(&t);
+             printf(þ"%sþ-, ctime(&t));
+       }
+
+
+SEE ALSO
+     gmtime, localtime, asctime, time
+
+%DI
+%EI
+
+SYNOPSIS
+     void ei(void);
+     void di(void);
+
+DESCRIPTION
+
+     þ"Ei() and þ"di() enable and disable interrupts respectivly.
+%DUP
+
+SYNOPSIS
+     #include  <unixio.h>
+
+     int dup(int fd)
+
+DESCRIPTION
+
+     Given a file descriptor, such as returned  by  þ$open(),  this
+     routine will return another file descriptor which will refer
+     to the same open file.  -1 is returned if the fd argument is
+     a bad descriptor or does not refer to an open file.
+
+SEE ALSO
+     open, close, creat, read, write
+
+%EXECL
+%EXECV
+
+SYNOPSIS
+     #include  <sys.h>
+
+     int execl(char * name, pname, ...)
+     int execv(char * name, ppname)
+
+DESCRIPTION
+
+     þ%Execl() and þ%execv() load and execute the  program  specified
+     by the string name. þ%Execl() takes the arguments for the pro-
+     gram from the zero-terminated list of string arguments.  þ#Ex-
+     þ#ecv() is passed a pointer to an array of strings.  The array
+     must be zero-terminated. If the named program is  found  and
+     can  be read, the call does not return. Thus any return from
+     these routines may be treated as an error.
+
+SEE ALSO
+     spawnl, spawnv, system
+
+%EXIT
+
+SYNOPSIS
+     #include  <stdlib.h>
+
+     void      exit(int status)
+
+DESCRIPTION
+
+     This call will close all open files and exit from  the  pro-
+     gram. On CP/M, this means a return to CCP level. Status will
+     be stored in a known place for  examination  by  other  pro-
+     grams.  This is only useful if the program executing was ac-
+     tually invoked by another program  which  is  trapping  warm
+     boots. The status value will be stored on CP/M at 80H.  This
+     call will never return.
+%_EXIT
+
+SYNOPSIS
+     #include  <stdlib.h>
+     void      _exit(int status)
+
+DESCRIPTION
+
+     This function will cause an immediate exit from the program,
+     without  the  normal  flushing of stdio buffers that is per-
+     formed by þ$exit().
+
+SEE ALSO
+     exit
+
+%EXP
+%LOG
+%LOG10
+%POW
+
+SYNOPSIS
+     #include  <math.h>
+
+     double    exp(double f)
+     double    log(double f)
+     double    log10(double f)
+     double    pow(double x, y)
+
+DESCRIPTION
+
+     þ#Exp() returns the  exponential  function  of  its  argument,
+     þ#log()  the natural logarithm of f, and þ%log10() the logarithm
+     to base 10. þ#Pow() returns the value of x raised to the  y'th
+     power.
+%FABS
+%CEIL
+%FLOOR
+
+SYNOPSIS
+     #include  <math.h>
+
+     double    fabs(double f)
+     double    ceil(double f)
+     double    floor(double f)
+
+DESCRIPTION
+
+     These routines return respectively the absolute value of  f,
+     the smallest integral value not less than f, and the largest
+     integral value not greater than f.
+%FCLOSE
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       fclose(FILE * stream)
+
+DESCRIPTION
+
+     This routine closes the specified i/o stream. Stream  should
+     be  a token returned by a previous call to þ%fopen().  NULL is
+     returned on a successful close, EOF otherwise.
+
+SEE ALSO
+     fopen, fread, fwrite
+
+%FEOF
+%FERROR
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     feof(FILE * stream)
+     ferror(FILE * stream)
+
+DESCRIPTION
+
+     These macros test the status  of  the  EOF  and  ERROR  bits
+     respectively  for the specified stream. Each will be true if
+     the corresponding flag is set. The  macros  are  defined  in
+     stdio.h.  Stream  must  be  a  token  returned by a previous
+     þ%fopen() call.
+
+SEE ALSO
+     fopen, fclose
+
+%FFLUSH
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int fflush(FILE * stream)
+
+DESCRIPTION
+
+     þ&Fflush() will output  to  the  disk  file  or  other  device
+     currently  open  on the specified stream the contents of the
+     associated buffer. This is typically used for flushing  buf-
+     fered standard output in interactive applications.
+
+SEE ALSO
+     fopen, fclose
+
+%FGETC
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       fgetc(FILE * stream)
+
+DESCRIPTION
+
+     þ%Fgetc() returns the next character from  the  input  stream.
+     If  end-of-file is encountered EOF will be returned instead.
+     It is for this reason that the function is declared as  int.
+     The  integer  EOF  is  not a valid byte, thus end-of-file is
+     distinguishable from reading a byte of all 1 bits  from  the
+     file.  þ%Fgetc() is the non-macro version of þ$getc().
+
+
+
+SEE ALSO
+     fopen, fclose, fputc, getc, putc
+
+%FGETS
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     char * fgets(char * s, size_t n, char * stream)
+
+DESCRIPTION
+
+     þ%Fgets() places in the buffer s up to n-1 characters from the
+     input  stream.  If a newline is seen in the input before the
+     correct number of characters is read, then þ%fgets() will  re-
+     turn  immediately.  The  newline will be left in the buffer.
+     The buffer will be null terminated in any case.  A  success-
+     ful þ%fgets() will return its first argument; NULL is returned
+     on end-of-file or error.
+%FILENO
+
+SYNOPSIS
+     fileno(FILE * stream)
+
+DESCRIPTION
+
+     þ&Fileno() is a macro  from  stdio.h  which  yields  the  file
+     descriptor associated with stream. It is mainly used when it
+     is desired to perform some low-level  operation  on  a  file
+     opened as a stdio stream.
+
+SEE ALSO
+     fopen, fclose, open, close
+
+%FOPEN
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     FILE * fopen(char * name, char * mode);
+
+DESCRIPTION
+
+
+DESCRIPTION
+
+     þ%Fopen() attempts to open file for  reading  or  writing  (or
+     both)  according  to  the  mode  string  supplied.  The mode
+     string is interpreted as follows:
+r
+
+     The file is opend for reading if it exists. If the file does
+     not exist the call fails.
+r+
+
+     If the file exists it is opened for reading and writing.  If
+     the file does not already exist the call fails.
+w
+
+     The file is created if it does not exist, or truncated if it
+     does. It is then opened for writing.
+w+
+
+     The file is created if it does not already exist,  or  trun-
+     cated  if it does.  The file is opened for reading and writ-
+     ing.
+a
+
+     The file is created if it does not already exist, and opened
+     for  writing.   All writes will be dynamically forced to the
+     end of file, thus this mode is known as þ&append mode.
+a+
+
+     The file is created if it does not already exist, and opened
+     for  reading  and  writing.  All  writes to the file will be
+     dynamically forced to the end of the file,  i.e.  while  any
+     portion  of the file may be read, all writes will take place
+     at the end of the file and will not overwrite  any  existing
+     data.   Calling  þ%fseek() in an attempt to write at any other
+     place in the file will not be effective.  The  þ!bþ*  modifier
+     may  be  appended  to  any of the above modes, e.g. þ#r+bþ# or
+     þ#rb+þ< are equivalent. Adding the þ!bþ8 modifier will cause the
+     file  to be opened in binary rather than ASCII mode. Opening
+     in ASCII mode ensures that text files are read in  a  manner
+     compatible with the Unix-derived conventions for C programs,
+     i.e. that text files  contain  lines  delimited  by  newline
+     characters.   The special treatment of read or written char-
+     acters varies with the operating system, but  includes  some
+     or all of the following:
+NEWLINE (LINE FEED)
+
+     Converted to carriage return, line feed on output.
+RETURN
+
+     Ignored on input, inserted before NEWLINE on output.
+CTRL-Z
+
+     Signals EOF on input, appended on fclose on output if neces-
+     sary on CP/M.
+
+
+Opening a file in binary mode will allow  each  character  to  be
+     read  just  as written, but because the exact size of a file
+     is not known to CP/M, the file may contain more  bytes  than
+     were  written  to  it.  See þ$open() for a description of what
+     constitutes a file name.  When using one of  the  read/write
+     modes  (with  a  '+' character in the string), although they
+     permits reading and writing on the same stream,  it  is  not
+     possible  to  arbitrarily  mix input and output calls to the
+     same stream. At any given time a stream opened  with  a  þ!+
+     mode  will  be in either an input or output state. The state
+     may only be changed when the  associated  buffer  is  empty,
+     which  is  only  guaranteed  immediately  after  a  call  to
+     þ&fflush() or one of the file positioning functions þ%fseek() or
+     þ&rewind().  The  buffer will also be empty after encountering
+     EOF while reading a binary stream,  but  it  is  recommended
+     that an explicit call to þ&fflush() be used to ensure this si-
+     tuation. Thus after reading from a stream  you  should  call
+     þ&fflush()  or  þ%fseek()  before  attempting  to  write on that
+     stream, and vice versa.
+
+SEE ALSO
+     fclose, fgetc, fputc, freopen
+
+%FPRINTF
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     fprintf(FILE * stream, char * fmt, ...);
+     vfprintf(FILE * stream, va_list va_arg);
+
+DESCRIPTION
+
+     þ'Fprintf()  performs  formatted  printing  on  the  specified
+     stream.  Refer  to þ&printf() for the details of the available
+     formats.  þ(Vfprintf() is similar to  þ'fprintf()  but  takes  a
+     variable  argument  list pointer rather than a list of argu-
+     ments. See the description of þ"va_þ%start() for  more  informa-
+     tion on variable argument lists.
+
+SEE ALSO
+     printf, fscanf, sscanf
+
+%FPUTC
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       fputc(int c, FILE * stream)
+
+DESCRIPTION
+
+     The character c is written to the supplied stream.  This  is
+     the  non-macro  version of þ$putc(). The character is returned
+     if it was successfully written, EOF is  returned  otherwise.
+     Note  that þ5written to the streamþ: may mean only placing the
+     character in the buffer associated with the stream.
+
+SEE ALSO
+     putc, fgetc, fopen, fflush
+
+%FPUTS
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       fputs(char * s, FILE * stream)
+
+DESCRIPTION
+
+     The null-terminated string s is written to  the  stream.  No
+     newline is appended (cf. þ$puts() ). The error return is EOF.
+
+SEE ALSO
+     puts, fgets, fopen, fclose
+
+%FREAD
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       fread(void * buf, size_t size, size_t cnt,
+                    FILE * stream)
+
+DESCRIPTION
+
+     Up to cnt objects, each of length size, are read into memory
+     at  buf  from  the stream. The return value is the number of
+     objects read. If none is read, 0  will  be  returned.   Note
+     that  a  return value less than cnt, but greater than 0, may
+     not represent an error (cf. þ&fwrite() ).  No  word  alignment
+     in  the stream is assumed or necessary. The read is done via
+     successive þ$getc()'s.
+
+
+
+
+SEE ALSO
+     fwrite, fopen, fclose, getc
+
+%FREE
+
+SYNOPSIS
+     #include  <stdlib.h>
+
+     void      free(void * ptr)
+
+DESCRIPTION
+
+     þ$Free() deallocates the block of memory at  ptr,  which  must
+     have been obtained from a call to þ&malloc() or þ&calloc().
+
+SEE ALSO
+     malloc, calloc
+
+%FREOPEN
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     FILE * freopen(char * name, char * mode, FILE * stream)
+
+DESCRIPTION
+
+     þ'Freopen() closes the given stream (if  open)  then  re-opens
+     the  stream attached to the file described by name. The mode
+     of opening is given by mode.  It either returns  the  stream
+     argument,  if  successful,  or  NULL if not. See þ%fopen() for
+     more information.
+
+SEE ALSO
+     fopen, fclose
+
+%FREXP
+%LDEXP
+
+SYNOPSIS
+     #include  <math.h>
+
+     double    frexp(double f, int * p)
+
+     double    ldexp(double f, int i)
+
+DESCRIPTION
+
+     þ%Frexp() breaks a floating point  number  into  a  normalized
+     fraction  and  an integral power of 2. The integer is stored
+     into the int object pointed to by p.  Its return value x  is
+     in  the  interval [0.5, 1.0) or zero, and f equals x times 2
+     raised to the power stored in *p.  If f is zero, both  parts
+     of the result are zero.  þ%Ldexp() performs the reverse opera-
+     tion; the integer i is added to the exponent of the floating
+     point f and the resultant value returned.
+%FSCANF
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       fscanf(FILE * stream, char * fmt, ...)
+
+DESCRIPTION
+
+     This routine performs formatted  input  from  the  specified
+     stream.  See þ%scanf() for a full description of the behaviour
+     of the routine.  þ'Vfscanf() is similar to þ&fscanf() but  takes
+     a variable argument list pointer rather than a list of argu-
+     ments. See the description of þ"va_þ%start() for  more  informa-
+     tion on variable argument lists.
+
+SEE ALSO
+     scanf, sscanf, fopen, fclose
+
+%FSEEK
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       fseek(FILE * stream, long offs, int wh)
+
+DESCRIPTION
+
+     þ%Fseek() positions the þ,file pointerþ8 (i.e. a pointer to  the
+     next  character  to  be  read  or  written) of the specified
+     stream as follows:
+8                    _____________________________
+                     wh     resultant location
+8                    _____________________________
+                     0    offs
+                     1    offs+previous location
+                     2    offs+length of file
+8                    _____________________________
+7                   |7|7|7|7|
+
+
+
+                       |7|7|7|7|
+
+
+
+                                                |7|7|7|7|
+
+
+
+
+
+
+It should be noted that offs is a signed value. Thus  the  3  al-
+     lowed modes give postioning relative to the beginning of the
+     file, the current file pointer  and  the  end  of  the  file
+     respectively.  EOF  is  returned  if the positioning request
+     could not be satisfied. Note however that positioning beyond
+     the  end of the file is legal, but will result in an EOF in-
+     dication if an attempt is made to read  data  there.  It  is
+     quite  in  order  to  write  data beyond the previous end of
+     file.  þ%Fseek() correctly accounts for any buffered data.
+
+SEE ALSO
+     lseek, fopen, fclose
+
+%FTELL
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     long      ftell(FILE * stream)
+
+DESCRIPTION
+
+     This function returns the current position of the conceptual
+     read/write  pointer associated with stream.  This is the po-
+     sition relative to the beginning of the  file  of  the  next
+     byte to be read from or written to the file.
+
+SEE ALSO
+     fseek
+
+%FWRITE
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       fwrite(void * buf, size_t size, size_t cnt,
+                   FILE * stream)
+
+DESCRIPTION
+
+     Cnt objects of length size bytes will be written from memory
+     at buf, to the specified stream. The number of whole objects
+     written will be returned, or 0 if none could be written. Any
+     return  value not equal to cnt should be treated as an error
+     (cf. þ%fread() ).
+
+SEE ALSO
+     fread, fopen, fclose
+
+%_GETARGS
+
+SYNOPSIS
+     #include  <sys.h>
+
+     char ** _getargs(char * buf, char * name)
+     extern int _argc_;
+
+DESCRIPTION
+
+     This routine performs I/O redirection (CP/M only)  and  wild
+     card expansion. Under MS-DOS I/O redirection is performed by
+     the operating system. It is  called  from  startup  code  to
+     operate  on the command line if the -R option is used to the
+     C command, but may also be called by user-written  code.  If
+     the  buf  argument  is null, it will read lines of text from
+     standard input. If the standard input is a terminal (usually
+     the  console) the name argument will be written to the stan-
+     dard error stream as a prompt. If the buf  argument  is  not
+     null, it will be used as the source of the string to be pro-
+     cessed.  The returned value is a  pointer  to  an  array  of
+     strings, exactly as would be pointed to by the argv argument
+     to the main() function. The number of strings in  the  array
+     may be obtained from the global _argc_. For example, a typi-
+     cal use of this function would be:
+
+       #include    <sys.h>
+
+       main(argc, argv)
+       char ** argv;
+       {
+           extern char ** _getargs();
+           extern int    _argc_;
+
+           if(argc == 1) {     /* no arguments */
+             argv = _getargs(0, þ&mynameþ");
+             argc = _argc_;
+           }
+           .
+           .
+           .
+       }
+
+     There will be one string in the array for each word  in  the
+     buffer  processed.   Quotes, either single (') or double (þ!)
+     may be used to include white space in þ%wordsþ/. If  any  wild
+     card  characters  (?  or  *) appear in a non-quoted word, it
+     will be expanded into a string of words, one for  each  file
+     matching  the  word. The usual CP/M conventions are followed
+     for this expansion. On CP/M any occurence of the redirection
+     characters  >  and  <  outside quotes will be handled in the
+     following manner:
+> name
+
+     will cause standard output to  be  redirected  to  the  file
+     name.
+< name
+
+     will cause standard input to be  redirected  from  the  file
+     name.
+>> name
+
+     will cause standard output to append to file name.
+
+
+White space is optional between the > or < character and the file
+     name, however it is an error for a redirection character not
+     to be followed by a file name.  It is also  an  error  if  a
+     file  cannot  be opened for input or created for output.  An
+     append redirection (>>) will create the file if it does  not
+     exist.   If  the  source of text to be processed is standard
+     input, several lines may be supplied  by  ending  each  line
+     (except  the  last)  with a backslash (\).  This serves as a
+     continuation character. Note that the newline following  the
+     backslash is ignored, and not treated as white space.
+%GETC
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       getc(FILE * stream)
+     FILE * stream;
+
+DESCRIPTION
+
+     One character is read from  the  specified  stream  and  re-
+     turned.  EOF will be returned on end-of-file or error.  This
+     is the macro version of þ%fgetc(), and is defined in stdio.h.
+%GETCH
+%GETCHE
+%UNGETCH
+%PUTCH
+
+SYNOPSIS
+     #include  <conio.h>
+
+     char      getch(void)
+     char      getche(void)
+     void      putch(int c)
+
+DESCRIPTION
+
+     þ%Getch() reads a single character from the  console  keyboard
+     and  returns  it  without  echoing.  þ&Getche() is similar but
+     does echo the character typed.  þ'Ungetch() will push back one
+     character  such  that  the  next call to þ%getch() or þ&getche()
+     will return that character.  þ%Putch() outputs the character c
+     to  the  console screen, prepending a carriage return if the
+     character is a newline.
+
+SEE ALSO
+     cgets, cputs
+
+%GETCHAR
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       getchar(void)
+
+DESCRIPTION
+
+     þ'Getchar() is a þ$getc(þ%stdin) operation. It is a macro  defined
+     in  stdio.h.  Note that under normal circumstances getchar()
+     will NOT return unless a carriage return has been  typed  on
+     the  console. To get a single character immediately from the
+     console, use the routine þ%getch().
+
+SEE ALSO
+     getc, fgetc, freopen, fclose
+
+%GETCWD
+
+SYNOPSIS
+     #include  <sys.h>
+
+     char *    getcwd(int drive)
+
+DESCRIPTION
+
+     þ&Getcwd() returns the path name of the current working direc-
+     tory on the specified drive, where drive == 0 represents the
+     current  drive,  drive  ==  1  represents  A:,  drive  ==  2
+     represents B: etc.  The return value is a pointer to a stat-
+     ic area of memory which will be overwritten on the next call
+     to þ&getcwd().
+
+SEE ALSO
+     chdir
+
+%GETENV
+
+SYNOPSIS
+     #include  <stdlib.h>
+
+     char *    getenv(char * s)
+     extern char **    environ;
+
+DESCRIPTION
+
+     þ&Getenv() will search the vector of environment  strings  for
+     one  matching  the  argument  supplied, and return the value
+     part of that environment string. For  example,  if  the  en-
+     vironment contains the string
+
+           COMSPEC=A:\COMMAND.COM
+
+     then þ&getenv(þ5_C_O_M_S_P_E_CþG) will return A:\COMMAND.COM.  The glo-
+     bal variable environ is a pointer to an array of pointers to
+     environment strings, terminated by a null pointer. This  ar-
+     ray is initialized at startup time under MS-DOS from the en-
+     vironment pointer supplied when the  program  was  executed.
+     Under  CP/M  no  such  environment is supplied, so the first
+     call to þ&getenv() will attempt to open a file in the  current
+     user  number  on the current drive called ENVIRON. This file
+     should contain definitions  for  any  environment  variables
+     desired to be accessible to the program, e.g.
+
+     HITECH=0:C:
+
+     Each variable definition should be on a separate line,  con-
+     sisting  of  the  variable name (conventionally all in upper
+     case) followed without intervening white space by  an  equal
+     sign ('=') then the value to be assigned to that variable.
+%GETS
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     char * gets(char * s)
+
+DESCRIPTION
+
+     þ$Gets() reads a line from standard input into the  buffer  at
+     s,  deleting  the newline (cf. þ%fgets() ). The buffer is null
+     terminated. It returns its argument, or NULL on end-of-file.
+
+SEE ALSO
+     fgets, freopen
+
+%GETUID
+
+SYNOPSIS
+     #include  <sys.h>
+
+     int getuid(void)
+
+DESCRIPTION
+
+     þ&Getuid() returns the current  user  number.   On  CP/M,  the
+     current  user  number  determines the user number associated
+     with an opened or created file, unless overridden by an  ex-
+     plicit user number prefix in the file name.
+
+SEE ALSO
+     setuid, open
+
+%GETW
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       getw(FILE * stream)
+
+DESCRIPTION
+
+     þ$Getw() returns one word (16 bits for the Z80 and 8086)  from
+     the  nominated  stream.  EOF is returned on end-of-file, but
+     since this is a perfectly good word, the þ$feof() macro should
+     be used for testing for end-of-file.  When reading the word,
+     no special alignment in the file is necessary, as  the  read
+     is  done  by two consecutive þ$getc()'s.  The byte ordering is
+     however undefined. The word read should in general have been
+     written by þ$putw().
+
+SEE ALSO
+     putw, getc, fopen, fclose
+
+%GMTIME
+%LOCALTIME
+
+SYNOPSIS
+     #include  <time.h>
+
+     struct tm *       gmtime(time_t * t)
+     struct tm *       localtime(time_t * t)
+
+DESCRIPTION
+
+     These functions convert the time pointed to by t which is in
+     seconds  since  00:00:00  on Jan 1, 1970, into a broken down
+     time stored in a structure as defined in  þ$time.þ!h.   þ&Gmtime()
+     performs a straight conversion, while þ)localtime() takes into
+     account the contents of the global integer time_zone.   This
+     should  contain  the  number  of minutes that the local time
+     zone is WESTWARD of Greenwich. Since there is no  way  under
+     MS-DOS  of  actually  pre-determining this value, by default
+     þ)localtime() will return the same result as þ&gmtime().
+
+SEE ALSO
+     ctime, asctime, time
+
+%INP
+%OUTP
+
+SYNOPSIS
+     char inp(unsigned port)
+
+     void outp(unsigned, unsigned data)
+
+DESCRIPTION
+
+     These routines read and write bytes to and from  I/O  ports.
+     þ#Inp()  returns  the  data byte read from the specified port,
+     and þ$outp() outputs the data byte to the specified port.
+%INT86
+%INT86X
+%INTDOS
+%INTDOSX
+
+SYNOPSIS
+     #include  <dos.h>
+
+     int       int86(int intno, union REGS * inregs,
+               union REGS * outregs)
+     int       int86x(int intno, union REGS inregs,
+               union REGS outregs, struct SREGS * segregs)
+     int       intdos(union REGS * inregs, union REGS * outregs)
+     int       intdosx(union REGS * inregs, union REGS * outregs,
+               struct SREGS * segregs)
+
+DESCRIPTION
+
+     These functions allow calling of software interrupts from  C
+     programs.   þ%Int86() and þ&int86x() execute the software inter-
+     rupt specified by þ%intno while þ&intdos() and þ'intdosx() execute
+     interrupt  21(hex),  which  is the MS-DOS system call inter-
+     rupt.  The inregs pointer should point to a union containing
+     values  for  each of the general purpose registers to be set
+     when executing the interrupt, and the values of  the  regis-
+     ters  on  return  are  copied  into  the union pointed to by
+     outregs. The þ!x versions of the calls also take a pointer  to
+     a  union  defining  the segment register values to be set on
+     execution of the interrupt, though only ES and DS are  actu-
+     ally set from this structure.
+
+SEE ALSO
+     segread
+
+%ISALNUM
+%ISALPHA
+%ISDIGIT
+%ISLOWER
+%ISASCII
+%ISCNTRL
+%ISSPACE
+%ISUPPER
+%ISPUNCT
+
+SYNOPSIS
+     #include <ctype.h>
+
+     isalnum(char c)
+     isalpha(char c)
+     isascii(char c)
+     iscntrl(char c)
+     isdigit(char c)
+     islower(char c)
+     isprint(char c)
+     isgraph(char c)
+     ispunct(char c)
+     isspace(char c)
+     isupper(char c)
+     isxdigit(char c)
+     char c;
+
+DESCRIPTION
+
+     These macros, defined in ctype.h, test the supplied  charac-
+     ter  for  membership in one of several overlapping groups of
+     characters. Note that all except isascii are defined  for  þ!c
+     iff þ'isascii(þ!c) is true.
+
+       isalnum(c)  c is alphanumeric
+       isalpha(c)  c is in A-Z or a-z
+       isascii(c)  c is a 7 bit ascii character
+       iscntrl(c)  c is a control character
+       isdigit(c)  c is a decimal digit
+       islower(c)  c is in a-z
+       isprint(c)  c is a printing char
+       isgraph(c)  c is a non-space printable character
+       ispunct(c)  c is not alphanumeric
+       isspace(c)  c is a space, tab or newline
+       isupper(c)  c is in A-Z
+       isxdigit(c) c is in 0-9 or a-f or A-F
+
+
+SEE ALSO
+     toupper, tolower, toascii
+
+%ISATTY
+
+SYNOPSIS
+     #include  <unixio.h>
+
+     int isatty(int fd)
+
+DESCRIPTION
+
+     This tests the type of the file associated with fd.  It  re-
+     turns  true  if  the  file is attached to a tty-like device.
+     This would normally be used for testing if standard input is
+     coming  from  a  file  or  the  console.  For  testing STDIO
+     streams, use þ&isatty(þ&fileno(þ&stream)).
+%KBHIT
+
+SYNOPSIS
+     #include  <conio.h>
+
+     int       kbhit(void)
+
+DESCRIPTION
+
+     This function returns 1 if a character has been  pressed  on
+     the  console  keyboard,  0 otherwise. Normally the character
+     would then be read via þ%getch().
+
+SEE ALSO
+     getch, getche
+
+%LONGJMP
+
+SYNOPSIS
+     #include <setjmp.h>
+
+     void      longjmp(jmp_buf buf, int val)
+
+DESCRIPTION
+
+     þ'Longjmp(), in conjunction with þ&setjmp(), provides a  mechan-
+     ism  for  non-local  gotos.  To  use this facility, þ&setjmp()
+     should be called with a jmp_buf argument in some outer level
+     function. The call from þ&setjmp() will return 0. To return to
+     this level of execution, þ&lonjmp() may  be  called  with  the
+     same jmp_buf argument from an inner level of execution. Note
+     however that the function which called þ&setjmp()  must  still
+     be active when þ'longjmp() is called. Breach of this rule will
+     cause disaster, due to the use of a stack containing invalid
+     data.  The  val  argument to þ'longjmp() will be the value ap-
+     parently returned from the þ&setjmp(). This should normally be
+     non-zero,  to distinguish it from the genuine þ&setjmp() call.
+     For example:
+
+       #include <setjmp.h>
+
+       static jmp_buf    jb_err;
+
+       main()
+       {
+           if(setjmp(jb_err)) {
+             printf(þ2An error occured\nþ");
+             exit(1);
+           }
+           a_func();
+       }
+
+       a_func()
+       {
+           if(do_whatever() != 0)
+             longjmp(jb_err, 1);
+           if(do_something_else() != 0)
+             longjmp(jb_err, 2);
+       }
+
+
+
+The calls to þ'longjmp() above will never return; rather  the  call
+     to  þ&setjmp()  will appear to return, but with a return value
+     equal to the argument supplied to þ'longjmp().
+
+SEE ALSO
+     setjmp
+
+%LSEEK
+
+SYNOPSIS
+     #include  <unixio.h>
+
+     long lseek(int fd, long offs, int wh)
+
+DESCRIPTION
+
+     This function operates in an analogous  manner  to  þ%fseek(),
+     however it does so on unbuffered low-level i/o file descrip-
+     tors, rather than on STDIO  streams.  It  also  returns  the
+     resulting  pointer  location.  Thus þ%lseek(þ"fd, þ"0L, þ!1) returns
+     the current pointer location without moving it.  -1  is  re-
+     turned on error.
+
+SEE ALSO
+     open, close, read, write
+
+%MALLOC
+
+SYNOPSIS
+     #include  <stdlib.h>
+
+     void * malloc(size_t cnt)
+
+DESCRIPTION
+
+     þ&Malloc() attempts to allocate cnt bytes of memory  from  the
+     þ$heapþV,  the  dynamic memory allocation area. If successful,
+     it returns a pointer to the block, otherwise 0 is  returned.
+     The memory so allocated may be freed with þ$free(), or changed
+     in size via  þ'realloc().  þ&Malloc()  calls  þ$sbrk()  to  obtain
+     memory, and is in turn called by þ&calloc(). þ&Malloc() does not
+     clear the memory it obtains.
+
+SEE ALSO
+     calloc, free, realloc
+
+%MEMSET
+%MEMCPY
+%MEMCMP
+
+SYNOPSIS
+     #include  <string.h>
+
+     void      memset(void s, char c, int n)
+     void      memcpy(void * d, void * s, int n)
+     int       memcmp(void * s1, void * s2, int n)
+
+DESCRIPTION
+
+     þ&Memset() initializes n bytes of memory starting at the loca-
+     tion pointed to by s with the character c. þ&Memcpy() copies n
+     bytes of memory starting from the location pointed to  by  s
+     to the block of memory pointed to by d.  The result of copy-
+     ing overlapping blocks is undefined.  þ&Memcmp() compares  two
+     blocks  of  memory,  of length n, and returns a signed value
+     similar to þ'strncmp(). Unlike þ'strncmp() the comparision  does
+     not  stop  on a null character. The ascii collating sequence
+     is used for the comparision, but  the  effect  of  including
+     non-ascii  characters  in  the memory blocks on the sense of
+     the return value is indeterminate.
+
+SEE ALSO
+     strncpy, strncmp
+
+%MKDIR
+%RMDIR
+
+SYNOPSIS
+     #include  <sys.h>
+
+     int       mkdir(char * s)
+     int       rmdir(char * s)
+
+DESCRIPTION
+
+     These functions allow the creation  (þ%mkdir())  and  deletion
+     (þ%rmdir()) of sub-directories under the MS-DOS operating sys-
+     tem. The argument s may be an arbitrary  pathname,  and  the
+     return  value  will be -1 if the creation or removal was un-
+     successful.
+
+SEE ALSO
+     chdir
+
+%MSDOS
+%MSDOSCX
+
+SYNOPSIS
+     #include  <dos.h>
+
+     long      msdos(int ax, int dx, int cx,
+               int bx, int si, int di)
+     long      msdoscx(int ax, int dx, int cx,
+               int bx, int si, int di)
+
+DESCRIPTION
+
+     These functions allow direct access to MS-DOS system  calls.
+     The  arguments  will  be  placed in the registers implied by
+     their names, while the return value will be the contents  of
+     AX  and  DX  (for þ%msdos()) or the contents of DX and CX (for
+     þ'msdoscx()).  Only as many arguments  as  necessary  need  be
+     supplied, e.g. if only AH and DX need have specified valued,
+     then only 2 argument would be required. The following  piece
+     of code outputs a form-feed to the printer.
+
+           msdos(0x500, '\f');
+
+     Note that the system call number (in this case  5)  must  be
+     multiplied  by 0x100 since MS-DOS expects the call number in
+     AH, the high byte of AX.
+
+SEE ALSO
+     intdos, intdosx, int86, int86x
+
+%OPEN
+
+SYNOPSIS
+     #include  <unixio.h>
+
+     int       open(char * name, int mode)
+
+DESCRIPTION
+
+     þ$Open() is the fundamental means of opening files for reading
+     and  writing.   The file specified by name is sought, and if
+     found is opened for reading, writing or both. Mode is encod-
+     ed as follows:
+
+       Mode  Meaning
+       0     Open for reading only
+       1     Open for writing only
+       2     Open for both reading and writing
+
+
+
+The file must already exist - if it does not, þ%creat()  should  be
+     used  to create it.  On a successful open, a file descriptor
+     is returned. This is a non-negative  integer  which  may  be
+     used  to  refer  to the open file subsequently.  If the open
+     fails, -1 is returned.  The syntax of a CP/M filename is:
+
+       [uid:][drive:]name.type
+
+
+
+where uid is a decimal number 0 to 15, drive is a letter A  to  P
+     or  a  to  p,  name  is 1 to 8 characters and type is 0 to 3
+     characters. Though there are few  inherent  restrictions  on
+     the  characters in the name and type, it is recommended that
+     they be restricted to the alphanumerics and standard  print-
+     ing  characters.   Use of strange characters may cause prob-
+     lems in accessing and/or deleting the file.
+
+
+One or both of uid: and drive: may be omitted; if both  are  sup-
+     plied,  the  uid: must come first. Note that the [ and ] are
+     meta-symbols only. Some examples are:
+
+       fred.dat
+       file.c
+       0:xyz.com
+       0:a:file1.p
+       a:file2.
+
+
+
+If the uid: is omitted, the file will be sought with uid equal to
+     the  current user number, as returned by getuid(). If drive:
+     is omitted, the file will be sought on the currently select-
+     ed drive. The following special file names are recognized:
+
+       lst:  Accesses the list device - write only
+       pun:  Accesses the punch device - write only
+       rdr:  Accesses the reader device - read only
+       con:  Accesses the system console - read/write
+
+
+
+File names may be in any case - they are converted to upper  case
+     during processing of the name.
+
+
+MS-DOS filenames may be any valid MS-DOS 2.xx filename, e.g.
+
+       fred.nrk
+       A:\\HITECH\\STDIO.H
+
+
+
+The special device names (e.g. CON,  LST)  are  also  recognized.
+     These do not require (and should not have) a trailing colon.
+
+SEE ALSO
+     close, fopen, fclose, read, write, creat
+
+     SYNOPSIS
+     #include  <stdio.h>
+
+     void      perror(char * s)
+
+DESCRIPTION
+
+     This routine will print on the stderr stream the argument s,
+     followed  by  a descriptive message detailing the last error
+     returned from an open, close  read  or  write  call.  Unfor-
+     tunately CP/M does not provide definitive information relat-
+     ing to the error, except in the case of  a  random  read  or
+     write.  Thus  this  routine  is  of limited usefulness under
+     CP/M. MS-DOS provides much more information however, and use
+     of  þ&perror() after MS-DOS file handling calls will certainly
+     give useful diagnostics.
+
+SEE ALSO
+     open, close, read, write
+
+%PRINTF
+%VPRINTF
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       printf(char * fmt, ...)
+     int       vprintf(char * fmt, va_list va_arg)
+
+DESCRIPTION
+
+     þ&Printf() is a formatted output routine, operating on stdout.
+     There are corresponding routines operating on a given stream
+     (þ'fprintf()) or into a string buffer (þ'sprintf()). þ&Printf() is
+     passed  a  format string, followed by a list of zero or more
+     arguments. In the format string  are  conversion  specifica-
+     tions,  each  of which is used to print out one of the argu-
+     ment list values.  Each conversion specification is  of  the
+     form  %m.nc  where the percent symbol % introduces a conver-
+     sion, followed by an optional width specification m.   n  is
+     an  optional precision specification (introduced by the dot)
+     and c is a letter specifying the type of the conversion.   A
+     minus  sign  ('-')  preceding  m  indicates left rather than
+     right adjustment of the converted value in the field.  Where
+     the  field width is larger than required for the conversion,
+     blank padding is performed at the left or  right  as  speci-
+     fied.  Where  right  adjustment  of  a numeric conversion is
+     specified, and the first digit of m is 0, then padding  will
+     be performed with zeroes rather than blanks.
+
+
+If the character * is used in place of a decimal  constant,  e.g.
+     in  the  format %*d, then one integer argument will be taken
+     from the list to provide that value.  The types  of  conver-
+     sion are:
+f
+
+     Floating point - m is the total width and n is the number of
+     digits after the decimal point.  If n is omitted it defaults
+     to 6.
+e
+
+     Print the corresponding  argument  in  scientific  notation.
+     Otherwise similar to f.
+g
+
+     Use e or f format,  whichever  gives  maximum  precision  in
+     minimum width.
+o x X u d
+
+     Integer conversion - in radices 8, 16, 10 and 10 respective-
+     ly. The conversion is signed in the case of d, unsigned oth-
+     erwise. The precision value is the total number of digits to
+     print,  and  may be used to force leading zeroes. E.g. %8.4x
+     will print at least  4  hex  digits  in  an  8  wide  field.
+     Preceding  the key letter with an l indicates that the value
+     argument is a long integer or unsigned value.  The letter  X
+     prints  out hexadecimal numbers using the upper case letters
+     þ!A-þ!F rather than þ!a-þ!f as would be printed when using x.
+s
+
+     Print a string - the value argument is assumed to be a char-
+     acter  pointer. At most n characters from the string will be
+     printed, in a field m characters wide.
+c
+
+     The argument is assumed to be  a  single  character  and  is
+     printed literally.
+
+
+Any other characters used as conversion  specifications  will  be
+     printed.  Thus  %% will produce a single percent sign.  Some
+     examples:
+
+       printf(þ-Total = %4d%%þ%, 23)
+             yields 'Total =   23%'
+       printf(þ+Size is %lxþ( , size)
+             where size is a long, prints size
+             as hexadecimal.
+       printf(þ+Name = %.8sþ", þ+a1234567890þ!)
+             yields 'Name = a1234567'
+       printf(þ%xx%*dþ', 3, 4)
+             yields 'xx  4'
+
+
+
+Printf returns EOF on error, 0 otherwise.  þ'Vprintf()  is  similar
+     to þ&printf() but takes a variable argument list pointer rath-
+     er  than  a  list  of  arguments.  See  the  description  of
+     þ"va_þ%start() for more information on variable argument lists.
+
+SEE ALSO
+     fprintf, sprintf
+
+%PUTC
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       putc(int c, FILE * stream)
+
+DESCRIPTION
+
+     þ$Putc() is the macro version of þ%fputc()  and  is  defined  in
+     stdio.h. See þ%fputc() for a description of its behaviour.
+
+SEE ALSO
+     fputc, getc, fopen, fclose
+
+%PUTCHAR
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       putchar(int c)
+
+DESCRIPTION
+
+     þ'Putchar() is  a  þ$putc()  operation  on  stdout,  defined  in
+     stdio.h.
+
+SEE ALSO
+     putc, getc, freopen, fclose
+
+%PUTS
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       puts(char * s)
+
+DESCRIPTION
+
+     þ$Puts() writes the string s to the stdout stream, appending a
+     newline. The null terminating the string is not copied.  EOF
+     is returned on error.
+
+SEE ALSO
+     fputs, gets, freopen, fclose
+
+%PUTW
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       putw(int w, FILE * stream)
+
+DESCRIPTION
+
+     þ$Putw() copies the word w to the given stream. It returns  w,
+     except  on  error, in which case EOF is returned. Since this
+     is a good integer, þ&ferror() should be used to check for  er-
+     rors.
+
+SEE ALSO
+     getw, fopen, fclose
+
+%QSORT
+
+SYNOPSIS
+     #include  <stdlib.h>
+
+     void      qsort(void * base, size_t nel,
+               size_t width, int (*func)())
+
+DESCRIPTION
+
+     þ%Qsort() is an implementation of the quicksort algorithm.  It
+     sorts an array of nel items, each of length width bytes, lo-
+     cated contiguously in memory at base.  Func is a pointer  to
+     a  function  used by þ%qsort() to compare items. It calls func
+     with pointers to two items to be  compared.   If  the  first
+     item is considered to be greater than, equal to or less than
+     the second then þ$func() should return a  value  greater  than
+     zero, equal to zero or less than zero respectively.
+
+       static short      array[100];
+
+       #define SIZE  sizeof array/sizeof array[0]
+       a_func(p1, p2)
+       short * p1, * p2;
+       {
+             return *p1 - *p2;
+       }
+
+       sort_em()
+       {
+             qsort(array, SIZE,
+                   sizeof array[0], a_func);
+       }
+
+
+
+This will sort the array into ascending values. Note the  use  of
+     sizeof  to make the code independent of the size of a short,
+     or the number of elements in the array.
+%RAND
+
+SYNOPSIS
+     #include  <stdlib.h>
+
+     int rand(void)
+
+DESCRIPTION
+
+     þ$Rand() is a pseudo-random number generator.  It  returns  an
+     integer  in the range 0 to 32767, which changes in a pseudo-
+     random fashion on each call.
+
+SEE ALSO
+     srand
+
+%READ
+
+SYNOPSIS
+     #include  <unixio.h>
+
+     int       read(int fd, void * buf, size_t cnt)
+
+DESCRIPTION
+
+     þ$Read() will read from the file associated with fd up to  cnt
+     bytes into a buffer located at buf. It returns the number of
+     bytes actually read. A zero return indicates end-of-file.  A
+     negative  return  indicates  error.  Fd should have been ob-
+     tained from a previous call to þ$open().  It is  possible  for
+     þ$read()  to return less bytes than requested, e.g. when read-
+     ing from the console, in which case  þ$read()  will  read  one
+     line of input.
+
+SEE ALSO
+     open, close, write
+
+%REALLOC
+
+SYNOPSIS
+     void * realloc(void * ptr, size_t cnt)
+
+DESCRIPTION
+
+     þ'Realloc() frees the block of memory  at  ptr,  which  should
+     have  been obtained by a previous call to þ&malloc(), þ&calloc()
+     or þ'realloc(), then attempts to allocate cnt bytes of dynamic
+     memory,  and  if successful copies the contents of the block
+     of memory located at ptr into the new block.  At most, þ%real-
+     þ#loc()  will  copy  the number of bytes which were in the old
+     block, but if the new block is smaller, will only  copy  cnt
+     bytes.  If the block could not be allocated, 0 is returned.
+
+
+
+SEE ALSO
+     malloc, calloc, realloc
+
+%REMOVE
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       remove(char * s)
+
+DESCRIPTION
+
+     þ&Remove() will attempt to remove the file named by the  argu-
+     ment  s  from  the directory. A return value of -1 indicates
+     that the attempt failed.
+
+SEE ALSO
+     unlink
+
+%RENAME
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       rename(char * name1, char * name2)
+
+DESCRIPTION
+
+     The file named by name1 will be renamed to name2. -1 will be
+     returned if the rename was not successful. Note that renames
+     across user numbers or drives are not permitted.
+
+SEE ALSO
+     open, close, unlink
+
+%REWIND
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       rewind(FILE * stream)
+
+DESCRIPTION
+
+     This function will attempt  to  re-position  the  read/write
+     pointer  of  the  nominated  stream  to the beginning of the
+     file. A return value of -1 indicates that  the  attempt  was
+     not  successful,  perhaps  because  the stream is associated
+     with a non-random access file such as a character device.
+
+SEE ALSO
+     fseek, ftell
+
+%SBRK
+
+SYNOPSIS
+     char *    sbrk(int incr)
+
+DESCRIPTION
+
+     þ$Sbrk() increments the current highest memory location  allo-
+     cated to the program by incr bytes.  It returns a pointer to
+     the  previous  highest  location.  Thus  þ$sbrk(þ!0)  returns  a
+     pointer  to  the  current highest location, without altering
+     its value.  If there is insufficient memory to  satisfy  the
+     request, -1 is returned.
+
+SEE ALSO
+     brk, malloc, calloc, realloc, free
+
+%SCANF
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       scanf(char * fmt, ...)
+     int       vscanf(char *, va_list ap);
+
+DESCRIPTION
+
+     þ%Scanf() performs formatted  input  (þ*de-editingþ,)  from  the
+     stdin stream. Similar functions are available for streams in
+     general, and for strings.  The function þ&vscanf() is similar,
+     but takes a pointer to an argument list rather than a series
+     of additional arguments. This pointer should have been  ini-
+     tialized  with  þ"va_þ%start().   The input conversions are per-
+     formed according to the fmt string; in general  a  character
+     in  the  format  string must match a character in the input;
+     however a space character in the format  string  will  match
+     zero  or  more  þ,white  spaceþ> characters in the input, i.e.
+     spaces, tabs or newlines.  A conversion specification  takes
+     the  form  of the character %, optionally followed by an as-
+     signment suppression character ('*'), optionally followed by
+     a  numerical  maximum  field width, followed by a conversion
+     specification character. Each conversion specification,  un-
+     less  it  incorporates the assignment suppression character,
+     will assign a value to the variable pointed at by  the  next
+     argument. Thus if there are two conversion specifications in
+     the fmt string, there should be two additional pointer argu-
+     ments.  The conversion characters are as follows:
+o x d
+
+     Skip white space, then convert a number in base 8, 16 or  10
+     radix  respectively.  If a field width was supplied, take at
+     most that many characters from the input.  A  leading  minus
+     sign will be recognized.
+f
+
+     Skip white space, then convert a floating number  in  either
+     conventional  or  scientific  notation.  The field width ap-
+     plies as above.
+s
+
+     Skip white space, then copy a  maximal  length  sequence  of
+     non-white-space  characters.  The pointer argument must be a
+     pointer to char.  The field width will limit the  number  of
+     characters  copied.  The  resultant  string  will  be  null-
+     terminated.
+c
+
+     Copy the next character from the input. The pointer argument
+     is  assumed  to  be  a  pointer to char. If a field width is
+     specified, then copy that many characters. This differs from
+     the  s  format  in  that  white space does not terminate the
+     character sequence.
+
+
+The conversion characters o, x, u, d and f may be preceded by  an
+     l  to  indicate that the corresponding pointer argument is a
+     pointer to long or double as appropriate. A preceding h will
+     indicate  that  the  pointer  argument is a pointer to short
+     rather than int.
+
+
+þ%Scanf() returns the number of successful conversions; EOF is  re-
+     turned  if  end-of-file was seen before any conversions were
+     performed. Some examples are:
+
+       scanf(þ%%d %sþ), &a, &s)
+             with input þ)      12s
+       will assign 12 to a, and þ!sþ& to s.
+
+       scanf(þ(%4cd %lfþ), &c, &f)
+             with input þ* abcd -3.5
+       will assign þ$ abcþ5 to c, and -3.5 to f.
+
+
+SEE ALSO
+     fscanf, sscanf, printf, va_arg
+
+%SEGREAD
+
+SYNOPSIS
+     #include  <dos.h>
+     int       segread(struct SREGS * segregs)
+
+DESCRIPTION
+
+     þ'Segread() copies the values of the  segment  registers  into
+     the structure pointed to by segregs.
+
+SEE ALSO
+     int86, int86x, intdos, intdosx
+
+%SETJMP
+
+SYNOPSIS
+     #include <setjmp.h>
+     int       setjmp(jmp_buf buf)
+
+DESCRIPTION
+
+     þ&Setjmp() is used with þ'longjmp()  for  non-local  gotos.  See
+     þ'longjmp() for further information.
+
+SEE ALSO
+     longjmp
+
+%SETUID
+
+SYNOPSIS
+     #include  <sys.h>
+
+     void setuid(int uid)
+
+DESCRIPTION
+
+     þ&Setuid() will set the current user number to uid. Uid should
+     be a number in the range 0-15.
+
+SEE ALSO
+     getuid
+
+%SETVBUF
+%SETBUF
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       setvbuf(FILE * stream, char * buf,
+               int mode, size_t size);
+     void      setbuf(FILE * stream, char * buf)
+
+DESCRIPTION
+
+     The þ'setvbuf() function allows the buffering behaviour  of  a
+     STDIO  stream to be altered. It supersedes the function þ$set-
+     þ#buf() which is retained for  backwards  compatibility.   The
+     arguments to þ'setvbuf() are as follows: stream designates the
+     STDIO stream to be affected; buf is a pointer  to  a  buffer
+     which will be used for all subsequent I/O operations on this
+     stream. If buf is null, then the  routine  will  allocate  a
+     buffer from the heap if necessary, of size BUFSIZ as defined
+     in <stdio.h>.  mode may take  the  values  _IONBF,  to  turn
+     buffering  off  completely,  _IOFBF,  for full buffering, or
+     _IOLBF for line buffering. Full buffering means that the as-
+     sociated  buffer  will only be flushed when full, while line
+     buffering means that the buffer will be flushed at  the  end
+     of  each  line or when input is requested from another STDIO
+     stream. size is the size of the buffer supplied.  For  exam-
+     ple:
+
+       setvbuf(stdout, my_buf, _IOLBF, sizeof my_buf);
+
+     If a buffer is supplied by  the  caller,  that  buffer  will
+     remain   associated  with  that  stream  even  overþ&fclose(),
+     þ%fopen() calls until another þ'setvbuf() changes it.
+
+SEE ALSO
+     fopen, freopen, fclose
+
+%SET_VECTOR
+
+SYNOPSIS
+     #include  <intrpt.h>
+     typedef interrupt void (*isr)();
+     isr set_vector(isr * vector, isr func);
+
+DESCRIPTION
+
+     This routine allows an interrupt vector to  be  initialized.
+     The  first  argument  should be the address of the interrupt
+     vector (not the vector number but the actual  address)  cast
+     to  a pointer to þ#isr, which is a typedef'd pointer to an in-
+     terrupt function. The second argument should be the function
+     which  you  want the interrupt vector to point to. This must
+     be declared using the þ)interrupt type qualifier.  The  return
+     value  of  þ#set_þ&vector() is the previous contents of the vec-
+     tor.
+
+SEE ALSO
+     di(), ei()
+
+%SIGNAL
+
+SYNOPSIS
+     #include <signal.h>
+     void (* signal)(int sig, void (*func)());
+
+DESCRIPTION
+
+     þ&Signal()  provides  a  mechanism  for  catching  control-C's
+     (ctrl-BREAK  for  MS-DOS)  typed  on the console during I/O.
+     Under CP/M the console is polled whenever  an  I/O  call  is
+     performed,  while for MS-DOS the polling depends on the set-
+     ting of the BREAK command.  If a control-C is detected  cer-
+     tain action will be performed. The default action is to exit
+     summarily; this may be modified with þ&signal(). The sig argu-
+     ment  to signal may at the present time be only SIGINT, sig-
+     nifying an interrupt condition. The func argument may be one
+     of SIG_DFL, representing the default action, SIG_IGN, to ig-
+     nore control-C's completely, or the address  of  a  function
+     which  will  be  called with one argument, the number of the
+     signal caught, when a control-C is seen. As the only  signal
+     supported  is  SIGINT,  this will always be the value of the
+     argument to the called function.
+
+SEE ALSO
+     exit
+
+%SIN
+
+SYNOPSIS
+     #include  <math.h>
+
+     double    sin(double f);
+
+DESCRIPTION
+
+     This function returns the sine function of its argument.
+
+SEE ALSO
+     cos, tan, asin, acos, atan
+
+%SPAWNL
+%SPAWNV
+%SPAWNVE
+
+SYNOPSIS
+     int       spawnl(char * n, char * argv0, ...);
+     int       spawnv(cahr * n, char ** v)
+     int       spawnve(char * n, char ** v, char ** e)
+
+DESCRIPTION
+
+     These functions will load and execute a  sub-program,  named
+     by  the  argument  n. The calling conventions are similar to
+     the functions þ%execl() and þ%execv(), the difference being that
+     the spawn functions return to the calling program after ter-
+     mination of the sub-program, while the exec functions return
+     only  if the program could not be executed.  þ'Spawnve() takes
+     an environment list in the same format as the argument  list
+     which  will  be  supplied to the executed program as its en-
+     vironment.
+
+SEE ALSO
+     execl, execv
+
+%SPRINTF
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       sprintf(char * buf, char * fmt, ...);
+     int       vsprintf(char * buf, char * fmt, va_list ap);
+
+DESCRIPTION
+
+     þ'Sprintf() operates in a similar fashion to þ&printf(),  except
+     that  instead  of placing the converted output on the stdout
+     stream, the characters are placed in the buffer at buf.  The
+     resultant  string will be null-terminated, and the number of
+     characters in the buffer will be returned.   þ(Vsprintf  takes
+     an argument pointer rather than a list of arguments.
+
+SEE ALSO
+     printf, fprintf, sscanf
+
+%SQRT
+
+SYNOPSIS
+     #include  <math.h>
+
+     double    sqrt(double f)
+
+DESCRIPTION
+
+     þ$Sqrt() implements a square root function using Newton's  ap-
+     proximation.
+
+SEE ALSO
+     exp
+
+%SSCANF
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       sscanf(char * buf, char * fmt, ...);
+     int       vsscanf(char * buf, char * fmt, va_list ap);
+
+DESCRIPTION
+
+     þ&Sscanf() operates in a similar  manner  to  þ%scanf(),  except
+     that instead of the conversions being taken from stdin, they
+     are taken from the string at buf.
+
+SEE ALSO
+     scanf, fscanf, sprintf
+
+%SRAND
+
+SYNOPSIS
+     #include  <stdlib.h>
+
+     void srand(int seed)
+
+DESCRIPTION
+
+     þ%Srand() initializes the random number generator accessed  by
+     þ$rand()  with  the  given seed. This provides a mechanism for
+     varying the starting point  of  the  pseudo-random  sequence
+     yielded  by  þ$rand(). On the z80, a good place to get a truly
+     random seed is from the refresh register. Otherwise timing a
+     response from the console will do.
+
+SEE ALSO
+     rand
+
+%STAT
+
+SYNOPSIS
+     #include  <stat.h>
+
+     int       stat(char * name, struct stat * statbuf)
+
+DESCRIPTION
+
+     This routine returns information about the file by name. The
+     information  returned is operating system dependent, but may
+     include file attributes (e.g.   read  only),  file  size  in
+     bytes, and file modification and/or access times.  The argu-
+     ment name should be the name of the file,  and  may  include
+     path names under DOS, user numbers under CP/M, etc.  The ar-
+     gument statbuf should be the address of a structure  as  de-
+     fined in þ$stat.þ!h which will be filled in with the information
+     about the file. The structure of þ&struct þ$stat is as follows:
+
+       struct stat
+       {
+        short    st_mode;  /* flags */
+        long     st_atime; /* access time */
+        long     st_mtime; /* modification time */
+        long     st_size;  /* file size */
+       };
+
+     The access and modification times (under DOS these are  both
+     set  to the modification time) are in seconds since 00:00:00
+     Jan 1 1970. The function þ%ctime() may be used to convert this
+     to a readable value.  The file size is self explanatory. The
+     flag bits are as follows:
+                   Flag              Meaning
+8                 ____________________________________
+                 S_IFMT      mask for file type
+                 S_IFDIR     file is a directory
+                 S_IFREG     file is a regular file
+                 S_IREAD     file is readable
+                 S_IWRITE    file is writeable
+                 S_IEXEC     file is executable
+                 S_HIDDEN    file is hidden
+                 S_SYSTEM    file is marked system
+                 S_ARCHIVE   file has been written to
+     þ$Stat returns 0 on success, -1 on failure, e.g. if  the  file
+     could not be found.
+
+SEE ALSO
+     ctime, creat, chmod
+
+%STRCAT
+%STRCMP
+%STRCPY
+%STRLEN
+%STRNCAT
+%STRNCMP
+%STRNCPY
+
+SYNOPSIS
+     #include  <string.h>
+
+     char *    strcat(char * s1, char * s2);
+     int       strcmp(char * s1, char * s2);
+     char *    strcpy(char * s1, char * s2);
+     int       strlen(char * s);
+     char *    strncat(char * s1, char * s2, size_t n);
+     int       strncmp(char * s1, char * s2, size_t n);
+     char *    strncpy(char * s1, char * s2, size_t n);
+
+DESCRIPTION
+
+     These  functions  provide  operations   on   null-terminated
+     strings.  þ&Strcat()  appends  the string s2 to the end of the
+     string s1.  The string at s1 will be null terminated.  Need-
+     less  to  say  the buffer at s1 must be big enough. þ&Strcmp()
+     compares the two strings and returns a number  greater  than
+     0,  0  or  a  number  less than 0 according to whether s1 is
+     greater than, equal to or less than s2. The  comparision  is
+     via  the ascii collating order, with the first character the
+     most significant.  þ&Strcpy() copies s2 into the buffer at s1,
+     null terminating it.  þ&Strlen() returns the length of s1, not
+     including the terminating null.   þ'Strncat(),  þ'strncmp()  and
+     þ'strncpy()  will  catenate, compare and copy s2 and s1 in the
+     same manner as their similarly named counterparts above, but
+     involving at most n characters. For þ'strncpy(), the resulting
+     string may not be null terminated.
+%STRCHR
+%STRRCHR
+
+SYNOPSIS
+     #include  <string.h>
+
+     char *    strchr(char * s, int c)
+     char *    strrchr(char * s, int c)
+
+DESCRIPTION
+
+     These functions locate an instance of the character c in the
+     string s. In the case of þ&strchr() a pointer will be returned
+     to the first instance of the character  found  be  searching
+     from  the  beginning of the string, while þ'strrchr() searches
+     backwards from the end of the string. A null pointer is  re-
+     turned if the character does not exist in the string.
+
+SEE ALSO
+
+%SYSTEM
+
+SYNOPSIS
+     #include  <sys.h>
+
+     int       system(char * s)
+
+DESCRIPTION
+
+     When executed under MS-DOS þ&system() will pass  the  argument
+     string to the command processor, located via the environment
+     string COMSPEC, for execution. The exit status of  the  com-
+     mand  processor  will be returned from the call to system().
+     For example, to set the baud rate on the serial port  on  an
+     MS-DOS machine:
+
+           system(þ4MODE COM1:96,N,8,1,Pþ");
+
+     This function will not work on CP/M-86  since  it  does  not
+     have an invokable command interpreter. Under Concurrent CP/M
+     the CLI system call is used.
+
+SEE ALSO
+     spawnl, spawnv
+
+%TAN
+
+SYNOPSIS
+     #include  <math.h>
+
+     double    tan(double f);
+
+DESCRIPTION
+
+     This is the tangent function.
+
+SEE ALSO
+     sin, cos, asin, acos, atan
+
+%TIME
+
+SYNOPSIS
+     #include  <time.h>
+
+     time_t    time(time_t * t)
+
+DESCRIPTION
+
+     This function returns the  current  time  in  seconds  since
+     00:00:00 on Jan 1, 1970.  If the argument t is non-null, the
+     same value is stored into the object pointed to by  t.   The
+     accuracy  of  this  function  is  naturally dependent on the
+     operating system having the correct time. This function does
+     not  work  under  CP/M-86  or  CP/M  2.2 but does work under
+     Concurrent-CP/M and CP/M+.
+
+SEE ALSO
+     ctime, gmtime, localtime, asctime
+
+%TOUPPER
+%TOLOWER
+%TOASCII
+
+SYNOPSIS
+     #include  <ctype.h>
+     char toupper(int c);
+     char tolower(int c);
+     char toascii(int c);
+     char      c;
+
+DESCRIPTION
+
+     þ'Toupper() converts its lower  case  alphabetic  argument  to
+     upper  case,  þ'tolower() performs the reverse conversion, and
+     þ'toascii() returns a result that is guaranteed in  the  range
+     0-0177.  þ'Toupper()  and þ'tolower return their arguments if it
+     is not an alphabetic character.
+
+SEE ALSO
+     islower, isupper, isascii et. al.
+
+%UNGETC
+
+SYNOPSIS
+     #include  <stdio.h>
+
+     int       ungetc(int c, FILE * stream)
+
+DESCRIPTION
+
+     þ&Ungetc() will attempt to push back the character c onto  the
+     named  stream,  such that a subsequent þ$getc() operation will
+     return the character. At most one level of pushback will  be
+     allowed,  and  if  the stream is not buffered, even this may
+     not be possible. EOF is returned if the þ&ungetc()  could  not
+     be performed.
+
+
+
+
+
+SEE ALSO
+     getc
+
+%UNLINK
+
+SYNOPSIS
+     int       unlink(char * name)
+
+DESCRIPTION
+
+     þ&Unlink() will remove (delete) the named file, that is  erase
+     the file from its directory. See þ$open() for a description of
+     the file name construction.  Zero will be returned  if  suc-
+     cessful, -1 if the file did not exist or it could not be re-
+     moved.
+
+SEE ALSO
+     open, close, rename, remove
+
+%VA_START
+%VA_ARG
+%VA_END
+
+SYNOPSIS
+     #include  <stdarg.h>
+
+     void      va_start(va_list ap, þ%parmN);
+     þ$type      va_arg(ap, þ$type);
+     void      va_end(va_list ap);
+
+DESCRIPTION
+
+     These macros are provided to give access in a  portable  way
+     to  parameters  to  a function represented in a prototype by
+     the ellipsis symbol (...), where type and  number  of  argu-
+     ments  supplied  to  the  function  are not known at compile
+     time. The rightmost parameter  to  the  function  (shown  as
+     þ%parmN) plays an important role in these macros, as it is the
+     starting point for access to further parameters. In a  func-
+     tion  taking  variable  numbers  of arguments, a variable of
+     type va_list should be declared, then the macro va_start in-
+     voked  with  that  variable and the name of þ%parmN. This will
+     initialize the variable to allow  subsequent  calls  of  the
+     macro  va_arg  to access successive parameters. Each call to
+     va_arg requires two arguments; the variable  previously  de-
+     fined and a type name which is the type that the next param-
+     eter is expected to be. Note that  any  arguments  thus  ac-
+     cessed  will have been widened by the default conventions to
+     þ#int, þ(unsigned þ#int or þ&double.  For example if a character ar-
+     gument  has been passed, it should be accessed by va_arg(ap,
+     int) since the char will have been widened to þ#int.  An exam-
+     ple  is given below of a function taking one integer parame-
+     ter, followed by a number of other parameters. In this exam-
+     ple  the  function  expects  the subsequent parameters to be
+     pointers to char, but note that the compiler is not aware of
+     this,  and  it  is  the programmers responsibility to ensure
+     that correct arguments are supplied.
+
+       #include    <stdarg.h>
+       prf(int n, ...)
+       {
+           va_list ap;
+
+           va_start(ap, n);
+           while(n--)
+             puts(va_arg(ap, char *));
+           va_end(ap);
+       }
+
+%WRITE
+
+SYNOPSIS
+     #include  <unixio.h>
+
+     int       write(int fd, void * buf, size_t cnt)
+
+DESCRIPTION
+
+     þ%Write() will write from the buffer at buf up to cnt bytes to
+     the  file associated with the file descriptor fd. The number
+     of bytes actually written will be returned. EOF or  a  value
+     less  than  cnt will be returned on error.  In any case, any
+     return value not equal to cnt should be treated as an  error
+     (cf. þ$read() ).
+
+SEE ALSO
+     open, close, read
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

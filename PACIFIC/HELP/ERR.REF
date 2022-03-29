@@ -1,0 +1,2613 @@
+INDEX 584 13 C Compiler Error Reference
+22 3 #define syntax error
+217 2 #elif may not follow #else
+337 3 #elif must be in an #if
+535 1 #else may not follow #else
+615 1 #else must be in an #if
+671 3 #error: *
+846 3 #if ... sizeof() syntax error
+1038 2 #if ... sizeof: bug, unknown type code *
+1199 3 #if ... sizeof: illegal type combination
+1383 2 #if bug, operand = *
+1543 3 #if sizeof() error, no type specified
+1762 3 #if sizeof, unknown type *
+1931 3 #if value stack overflow
+2142 3 #if, #ifdef, or #ifndef without an argument
+2350 7 #include syntax error
+2727 2 '.' expected after '..'
+2875 2 '.' not followed by 'w' or 'b'
+3030 4 '=' expected after lle
+3166 4 '=' expected after p
+3291 3 'case' not in switch
+3470 4 'default' not in switch
+3649 2 ( expected
+3775 3 ) expected
+3933 4 , expected
+4211 3 -s, too few values specified in *
+4397 1 -s, too many values, * unused
+4501 3 ... illegal in non-prototype arg list
+4705 3 32 bit addressing illegal
+4907 4 6301 instruction illegal
+5034 4 6801 instruction illegal
+5193 4 68hc11 instruction illegal
+5306 4 68hc11/6301 instruction illegal
+5456 2 80186 instruction/addressing mode
+5614 2 80286 instruction
+5750 2 80386 instruction/addressing mode
+5899 2 80486 instruction/addressing mode
+6017 3 : expected
+6174 2 ; expected
+6312 1 = expected
+6357 2 ] expected
+6493 2 a parameter may not be a function
+6658 1 absolute expression required
+6732 3 add_reloc - bad size
+6918 3 argument * conflicts with prototype
+7091 2 argument -w* ignored
+7232 3 argument list conflicts with prototype
+7425 1 argument redeclared: *
+7524 1 arguments redeclared
+7652 3 arithmetic overflow in constant expression
+7872 3 array dimension on *[] ignored
+8063 3 array dimension redeclared
+8310 2 array index out of bounds
+8458 1 assertion
+8561 1 assertion failed: *
+8664 2 attempt to modify const object
+8784 2 auto variable * should not be qualified
+8969 3 bad #if ... defined() syntax
+9161 1 bad '-p' format
+9227 7 bad -a spec: *
+9448 3 bad -m option: -m*
+9618 2 bad -q option *
+9763 3 bad arg (*) to tysize
+9957 2 bad arg to *l
+10072 1 bad arg to -b
+10131 2 bad arg to e: *
+10286 2 bad arg to extraspecial
+10431 1 bad arg to im
+10517 2 bad bconfloat - *
+10664 2 bad bit address
+10761 2 bad bit number
+10842 1 bad bitfield type
+10903 1 bad character const
+10985 1 bad character in extended tekhex line *
+11075 1 bad checksum specification
+11167 1 bad combination of flags
+11251 3 bad complex relocation
+11400 2 bad confloat - *
+11546 2 bad conval - *
+11692 2 bad dimensions
+11824 2 bad dp/nargs in openpar: dp = *
+11917 3 bad element count expr
+12090 3 bad float operand size
+12227 2 bad gn
+12386 4 bad high address in -a spec
+12612 2 bad int. code
+12716 4 bad load address in -a spec
+12955 4 bad low address in -a spec
+13190 2 bad mod	'+' for	how = *
+13353 4 bad non-zero node in call graph
+13599 3 bad object code format
+13759 2 bad op * to revlog
+13910 2 bad op * to swaplog
+14051 2 bad op: *
+14196 2 bad operand size
+14294 3 bad operand to seg
+14491 3 bad origin format in spec
+14627 2 bad popreg
+14771 1 bad popreg *
+14865 2 bad pragma *
+14967 2 bad psnext list
+15108 2 bad pushreg
+15254 1 bad pushreg: *
+15348 2 bad putwsize
+15497 2 bad record type *
+15590 2 bad relocation type
+15731 2 bad ret_mask
+15881 2 bad segment fixups
+15978 13 bad segspec *
+16407 5 bad size in -s option
+16639 2 bad size list
+16773 6 bad storage class
+17120 3 bad string '*' in psect pragma
+17311 1 bad switch size *
+17399 2 bad sx
+17542 2 bad u usage
+17693 2 bad variable syntax
+17849 1 bad which (*) after i
+17952 7 binary digit expected
+18110 2 bit field too large (* bits)
+18224 2 bug: illegal __ macro *
+18338 4 can't allocate space for port variables: *
+18582 1 can't be both far and near
+18651 2 can't be long
+18771 2 can't be register
+18866 1 can't be short
+18974 1 can't be unsigned
+19069 5 can't call an interrupt function
+19416 2 can't create *
+19542 3 can't create cross reference file *
+19743 2 can't create temp file
+19743 2 can't create temp file *
+19880 1 can't create xref file *
+19964 2 can't enter abs psect
+20132 3 can't find space for psect * in segment *
+20326 3 can't generate code for this expression
+20520 3 can't have 'port' variable: *
+20777 2 can't have 'signed' and 'unsigned' together
+20927 5 can't have array of functions
+21255 2 can't have pointer to bit
+21411 2 can't initialise auto aggregates
+21546 2 can't initialize a basepage variable
+21674 3 can't initialize arg
+21894 4 can't mix proto and non-proto args
+22156 1 can't open
+22211 2 can't open *
+22361 2 can't open * file *
+22462 2 can't open avmap file *
+22590 2 can't open command file *
+22685 2 can't open file *
+22814 3 can't open include file *
+22972 1 can't reopen *
+23081 3 can't take address of register variable
+23275 2 can't take sizeof func
+23387 3 can't take this address
+23572 2 can't use a string in an #if
+23662 2 cannot get memory
+23768 1 cannot open
+23825 1 cannot open *
+23906 5 cannot open include file *
+24183 3 cast type must be scalar or void
+24366 2 char const too long
+24481 5 close error (disk space?)
+24798 4 closing quote expected
+25083 2 common symbol psect conflict: *
+25205 2 complex relocation not supported for -r or -l options yet
+25342 3 conflicting fnconf records
+25489 2 conflicting operand sizes
+25600 6 constant conditional branch
+26007 3 constant conditional branch: possible use of = instead of == 
+26243 2 constant expression required
+26366 2 constant left operand to ?
+26525 2 constant operand to || or &&
+26680 4 constant relational expression
+26959 2 control line * within macro expansion
+27123 4 declaration of * hides outer declaration
+27381 3 declarator too complex
+27595 2 default case redefined
+27726 1 deff not supported in cp/m version
+27815 9 degenerate signed comparison
+28115 9 degenerate unsigned comparison
+28342 4 digit out of range
+28628 3 dimension required
+28808 2 direct addressing required
+28931 1 directive not recognized
+29031 2 divide by zero in #if, zero result assumed
+29143 1 division by zero
+29251 3 double float argument required
+29458 1 duplicate -d flag
+29528 2 duplicate -d or -h flag
+29613 3 duplicate -m flag
+29777 2 duplicate base register
+29899 1 duplicate case label
+29995 1 duplicate case label *
+30103 2 duplicate displacement in operand
+30203 2 duplicate fnconf directive
+30359 2 duplicate index register
+30451 3 duplicate label *
+30635 3 duplicate qualifier
+30833 1 duplicate qualifier key *
+30928 2 duplicate qualifier key * (*)
+31083 2 duplicate qualifier name *
+31239 1 duplicate qualifier*
+31333 2 end of file within macro argument
+31505 3 end statement inside include file or macro
+31682 2 entry point multiply defined
+31787 2 enum tag or { expected
+31920 2 eof in #asm
+32057 2 eof inside conditional
+32165 2 eof inside macro def'n
+32298 5 eof on string file
+32618 6 error closing output file
+32988 4 error in format string
+33242 1 esp not permitted as index register
+33303 2 expand - bad how
+33453 2 expand - bad which
+33608 4 expected '-' in -a spec
+33733 2 exponent expected
+33828 3 expression error
+34014 2 expression generates no code
+34154 3 expression stack overflow at op *
+34333 2 expression syntax
+34427 2 expression too complex
+34591 11 external declaration inside function
+35311 2 fail directive: *
+35452 3 filename work buffer overflow
+35652 4 fixup overflow referencing *
+35895 6 fixup overflow referencing * 
+36224 1 flag * unknown
+36324 6 float param coerced to double
+36725 2 floating exponent too large
+36870 2 floating number expected
+36973 2 form length must be >= 15
+37108 9 formal parameter expected after #
+37509 4 function * appears in multiple call graphs: rooted at *
+37750 3 function * is never called
+37951 3 function body expected
+38149 11 function declared implicit int
+38850 2 function does not take arguments
+38982 7 function is already 'extern'; can't be 'static'
+39371 4 function or function pointer required
+39660 3 function's local data too large
+39834 2 functions can't return arrays
+39961 5 functions can't return functions
+40251 2 functions nested too deep
+40359 2 garbage after operands
+40494 2 garbage on end of line
+40680 2 hc11 and h301 are incompatible
+40814 2 hex digit expected
+40918 2 ident records do not match
+41064 2 identifier expected
+41181 2 identifier redefined: *
+41290 2 identifier redefined: * (from line *)
+41419 7 illegal # command *
+41750 2 illegal #if line
+41891 2 illegal #undef argument
+41988 2 illegal '#' directive
+42120 5 illegal -o flag
+42284 2 illegal -p flag
+42398 1 illegal addressing mode
+42460 3 illegal character (*)
+42644 2 illegal character (0*)
+42758 3 illegal character * in #if
+42941 2 illegal conversion
+43103 5 illegal conversion between pointer types
+43475 5 illegal conversion of integer to pointer
+43797 5 illegal conversion of pointer to integer
+44093 1 illegal flag *
+44151 5 illegal function qualifier(s)
+44468 6 illegal indirect addressing
+44636 2 illegal initialisation
+44779 2 illegal or too many -p flags
+44867 2 illegal record type
+45045 2 illegal register for indirection
+45164 3 illegal relocation size: *
+45382 2 illegal relocation type: *
+45546 2 illegal stack index
+45641 1 illegal switch *
+45720 2 illegal type for array dimension
+45830 1 illegal type for index expression
+45934 2 illegal type for switch expression
+46067 3 illegal use of void expression
+46239 2 image too big
+46370 3 implicit conversion of float to integer
+46604 5 implicit return at end of non-void function
+46919 9 implict signed to unsigned conversion
+47493 3 inappropriate 'else'
+47677 4 inappropriate break/continue
+47962 2 include files nested too deep
+48165 6 incompatible intermediate code version; should be *
+48632 4 incompatible intermediate code version; should be *.*
+48918 2 incomplete * record body: length = *
+49058 1 incomplete record
+49129 3 incomplete record: *
+49339 4 incomplete record: type = * length = *
+49525 2 inconsistent storage class
+49646 2 inconsistent type
+49767 1 index offset too large
+49878 1 indirection on illegal register
+49947 2 initialisation syntax
+50111 3 initializer in 'extern' declaration
+50346 1 insufficient memory for macro def'n
+50433 4 integer constant expected
+50663 2 integer expression required
+50818 2 integral argument required
+50979 1 integral type required
+51063 2 invalid disable: *
+51149 2 invalid number syntax
+51286 2 invalid operand size
+51426 2 invalid short addressing
+51545 2 invalid short addressing override
+51670 2 jump out of range
+51843 3 jump target out of range
+52015 1 label identifier expected
+52098 5 large stack offset for *
+52425 1 lexical error
+52529 4 line does not have a newline on the end
+52788 4 line too long
+53021 2 local illegal outside macros
+53208 1 local psect '*' conflicts with global psect of same name
+53291 2 logical type required
+53447 2 long argument required
+53603 2 macro * wasn't defined
+53759 2 macro argument after % must be absolute
+53946 2 macro argument may not appear after local
+54086 2 macro expansions nested too deep
+54229 2 macro name used as symbol
+54365 3 macro work area overflow
+54584 2 member * redefined
+54708 4 members cannot be functions
+54981 1 metaregister * can't be used directly
+55085 5 mismatched comparision
+55487 3 misplaced '?' or ':', previous operator is *
+55651 3 misplaced constant in #if
+55809 1 missing ')'
+55892 3 missing '=' in class spec
+55952 1 missing ']'
+56030 1 missing arg to -a
+56112 3 missing arg to -u
+56192 2 missing arg to -w
+56284 5 missing argument to 'pragma psect'
+56521 4 missing basic type: int assumed
+56734 2 missing key in avmap file
+56871 2 missing memory key in avmap file
+57010 8 missing name after pragma 'inline'
+57288 4 missing name after pragma 'printf_check'
+57478 2 missing number after % in -p option
+57599 8 missing number after pragma 'pack'
+57960 2 missing operand size
+58055 2 missing size for align
+58163 1 missing size for dc
+58262 2 mixed 16 and 32 bit index registers
+58408 2 mod by zero in #if, zero result assumed
+58546 6 module has code below file base of *
+58899 3 multi-byte constant * isn't portable
+59059 1 multiple free: *
+59166 1 multiply defined symbol *
+59262 1 multiply defined symbol: *
+59339 2 negative index offset
+59428 3 nested comments
+59601 2 no #asm before #endasm
+59697 2 no arg to -o
+59862 1 no case	labels
+59919 1 no case labels
+59985 2 no end record
+60088 2 no end record found
+60217 1 no file argument
+60281 2 no file arguments
+60399 3 no identifier in declaration
+60580 3 no memory for string buffer
+60814 2 no psect specified for function variable/argument allocation
+60970 1 no space for macro def'n
+61054 4 no start record: entry point defaults to zero
+61339 2 no. of arguments redeclared
+61472 2 nodecount = *
+61627 2 non-constant case label
+61742 3 non-prototyped function declaration: *
+61978 3 non-scalar types can't be converted
+62172 2 non-void function returns no value
+62320 2 not a member of the struct/union *
+62438 2 not a variable identifier: *
+62544 3 not an argument: *
+62730 3 object code version is greater than *
+62917 3 object file is not absolute
+63128 1 one segment override only permitted
+63229 2 only functions may be qualified interrupt
+63333 1 only functions may be void
+63439 6 only lvalues may be assigned to or modified
+63865 2 only register storage class allowed
+63972 1 oops! -ve number of nops required!
+64035 2 operand error
+64189 3 operand size undefined
+64380 4 operands of * not same pointer type
+64617 4 operands of * not same type
+64853 3 operator * in incorrect context
+65012 1 option not supported
+65074 3 out of far memory
+65304 2 out of far memory (wanted * bytes)
+65421 5 out of memory
+65722 3 out of near memory
+65941 2 out of space in macro * arg expansion
+66088 3 output file cannot be also an input file
+66298 2 page width must be >= 41
+66436 3 phase error
+66619 2 phase error in macro args
+66757 2 phase error on temporary label
+66881 2 pointer required
+67027 2 pointer to * argument required
+67201 3 pointer to non-static object returned
+67427 1 pop immediate illegal
+67495 2 pop of allreg!!
+67644 2 pop of register *
+67797 2 popreg	- bad reg *(*)
+67945 2 popreg - bad reg
+68132 2 popreg - trying to pop * with 0* regbits - can't do it!
+68299 2 portion of expression has no effect
+68419 5 possible pointer truncation
+68724 2 preprocessor assertion failure
+68872 5 probable missing '}' in previous block
+69179 2 psect '*' re-orged
+69282 3 psect * cannot be in classes *
+69468 1 psect * in more than one group
+69560 4 psect * not loaded on * boundary
+69785 3 psect * not relocated on * boundary
+69954 3 psect * not specified in -p option
+70122 2 psect * re-orged
+70219 1 psect * selector value redefined
+70313 3 psect * type redefined: *
+70541 1 psect exceeds max size: *
+70620 2 psect is absolute: *
+70735 2 psect may not be local and global
+70865 1 psect origin multiply defined: *
+70943 2 psect property redefined
+71041 2 psect reloc redefined
+71152 2 psect selector redefined
+71266 2 psect size redefined
+71367 2 push of allreg!!
+71517 2 push of register *
+71666 2 pushreg	- bad reg
+71820 2 pushreg	- bad reg *(*)
+72009 2 pushreg - trying to push * with 0* regbits - can't do it!
+72165 2 radix value out of range
+72266 1 read error on *
+72341 2 record too long
+72433 2 record too long: *
+72582 5 recursive function calls: 
+72861 2 recursive macro definition of *
+72989 3 redefining macro *
+73208 3 redundant & applied to array
+73379 2 reginit!!!???
+73533 2 regused	- bad arg to g
+73681 4 relocation error
+74003 3 relocation offset * out of range 0..*
+74195 2 relocation too complex
+74299 1 remsym error
+74378 1 rept argument must be >= 0
+74471 1 restore without matching save
+74562 2 revlog - bad op
+74715 2 save/restore too deep
+74811 2 scale value invalid
+74915 1 scale value must be a constant
+74990 1 seek error: *
+75075 2 segment * overlaps segment *
+75208 5 signatures do not match: *
+75536 2 signed bitfields not supported
+75697 2 simple integer expression required
+75845 1 simple type required for *
+75947 2 size error
+76105 7 sizeof yields 0
+76541 2 storage class illegal
+76700 4 storage class redeclared
+76938 4 strange character * after ##
+77191 1 strange character after # *
+77250 2 string expected
+77343 1 string too long
+77410 2 struct/union member expected
+77511 1 struct/union redefined: *
+77588 1 struct/union required
+77686 2 struct/union tag or '{' expected
+77832 2 structure too big for function return
+77977 3 symbol * cannot be global
+78201 3 symbol * has erroneous psect: *
+78408 2 symbol * is not external
+78581 3 symbol * not defined in #undef
+78761 1 syntax error
+78861 4 syntax error in -a spec
+78977 3 syntax error in checksum list
+79191 1 text does not start at 0
+79269 1 text offset too low
+79346 3 text record has bad length: *
+79527 2 text record has length too small: *
+79661 3 this function too large - try reducing level of optimization
+79850 2 this is a struct
+80007 2 this is a union
+80160 2 this is an enum
+80326 2 too few arguments
+80433 2 too few arguments for format string
+80598 3 too many (*) enumeration constants
+80775 2 too many (*) structure members
+80919 1 too many arguments
+81024 2 too many arguments for format string
+81171 1 too many arguments for macro
+81276 2 too many arguments in macro expansion
+81398 2 too many cases in switch
+81572 4 too many comment lines - discarding
+81852 2 too many errors
+82019 2 too many include directories
+82136 2 too many initializers
+82297 1 too many macro parameters
+82390 2 too many nested #* statements
+82490 1 too many psect class specifications
+82573 1 too many psect pragmas
+82641 1 too many psects
+82715 1 too many qualifier names
+82788 2 too many relocation items
+82879 1 too many segment fixups
+82970 1 too many segments
+83054 3 too many symbols
+83276 2 too many temporary labels
+83410 2 too may symbols
+83538 1 too much indirection
+83619 2 too much pushback
+83717 1 type conflict
+83791 3 type redeclared
+84020 2 type specifier reqd. for proto arg
+84154 2 unbalanced paren's, op is *
+84293 1 undefined enum tag: *
+84354 2 undefined identifier: *
+84481 2 undefined label: *
+84598 2 undefined operand size
+84738 2 undefined public symbol *
+84862 4 undefined shift (* bits)
+85189 1 undefined struct/union
+85278 2 undefined struct/union: *
+85369 1 undefined symbol *
+85474 3 undefined symbol * in #if, 0 used
+85631 2 undefined symbol:
+85778 1 undefined symbols:
+85865 2 undefined temporary label
+86000 1 undefined variable: *
+86082 2 unexpected end of file
+86199 1 unexpected eof
+86300 10 unexpected text in #control line ignored
+86605 2 unknown	predicate *
+86760 1 unknown addressing mode
+86836 1 unknown arg to opt
+86904 2 unknown arg type to lpsize
+87062 2 unknown complex operator *
+87225 1 unknown directive
+87293 2 unknown fnrec type *
+87383 1 unknown option *
+87452 1 unknown pragma *
+87514 2 unknown psect: *
+87645 2 unknown qualifier '*' given to -a
+87817 2 unknown record type: *
+87940 2 unknown symbol type *
+88058 3 unreachable code
+88283 2 unreasonable matching depth
+88443 1 unrecognized argument to opt
+88513 2 unrecognized option to -o: *
+88615 2 unrecognized option to -z: *
+88796 9 unrecognized qualifer name after 'strings'
+89148 3 unterminated #if[n][def] block from line *
+89296 2 unterminated macro arg
+89427 1 unterminated string
+89525 2 unterminated string in macro body
+89610 1 unused constant: *
+89696 1 unused enum: *
+89779 1 unused label: *
+89853 1 unused member: *
+89941 1 unused structure: *
+90024 1 unused typedef: *
+90099 1 unused union: *
+90192 1 unused variable declaration: *
+90282 1 unused variable definition: *
+90377 2 variable may be used before set: *
+90551 2 void function cannot return value
+90670 1 while expected
+90758 2 work buffer overflow *
+90881 2 write error (out of disk space?) *
+90954 2 write error on *
+91075 2 write error on object file
+91264 1 wrong number of macro arguments for * - * instead of *
+91337 1 { expected
+91385 1 } expected
+%#define syntax error
+A macro definition has a syntax error. This could be due
+to a macro or formal parameter name that does not start
+with a letter or a missing closing parenthesis (')').
+%#elif may not follow #else
+If a #else has been used after #if, you cannot then use
+a #elif in the same conditional block.
+%#elif must be in an #if
+#elif must be preceded by a matching #if line. If there
+is an apparently corresponding #if line, check for things
+like extra #endif's, or improperly terminated comments.
+%#else may not follow #else
+There can be only one #else corresponding to each #if.
+%#else must be in an #if
+#else can only be used after a matching #if.
+%#error: *
+This is a programmer generated error; there is a directive
+causing a deliberate error. This is normally used to check
+compile time defines etc.
+%#if ... sizeof() syntax error
+The preprocessor found a syntax error in  the argument to sizeof,
+in a #if expression. Probable causes are mismatched parentheses
+and similar things.
+%#if ... sizeof: bug, unknown type code *
+The preprocessor has made an internal error in evaluating
+a sizeof() expression. Check for a malformed type specifier.
+%#if ... sizeof: illegal type combination
+The preprocessor found an illegal type combination in
+the argument to sizeof() in a #if expression. Illegal
+combinations include such things as "short long int".
+%#if bug, operand = *
+The preprocessor has tried to evaluate an expression with
+an operator it does not understand. This is an internal error.
+%#if sizeof() error, no type specified
+Sizeof() was used in a preprocessor #if expression, but no
+type was specified. The argument to sizeof() in a preprocessor
+expression must be a valid simple type, or pointer to a simple type.
+%#if sizeof, unknown type *
+An unknown type was used in a preprocessor sizeof(). The
+preprocessor can only evaluate sizeof() with basic types, or
+pointers to basic types.
+%#if value stack overflow
+The preprocessor filled up its expression evaluation stack
+in a #if expression. Simplify the expression - it probably contains
+too many parenthesized subexpressions.
+%#if, #ifdef, or #ifndef without an argument
+The preprocessor directives #if, #ifdef and #ifndef must
+have an argument. The argument to #if should be an expression,
+while the argument to #ifdef or #ifndef should be a single name.
+%#include syntax error
+The syntax of the filename argument to #include is invalid. The
+argument to #include must be a valid file name, either enclosed in
+double quotes ("") or angle brackets (<>). For example:
+#include	"afile.h"
+#include	<otherfile.h>
+Spaces should not be included, and the closing quote or bracket must be present. There
+should be nothing else on the line.
+%'.' expected after '..'
+The only context in which two successive dots may appear is as part of the
+ellipsis symbol, which must have 3 dots.
+%'.' not followed by 'w' or 'b'
+A dot (.) introduces an operand size specifier, so it must be followed
+by an appropriate specifier. .W is for words, .B for bytes.
+%'=' expected after lle
+The LLE option requires an equal sign, then the desired listing line length
+as a decimal number, e.g.
+
+opt	lle=80
+%'=' expected after p
+The P option specifies a page length, and must have an equal sign and a
+decimal number, e.g.
+
+opt	p=66
+%'case' not in switch
+A case statement has been encountered but there is no enclosing switch
+statement. A case statement may only appear inside the body of a
+switch statement.
+%'default' not in switch
+A label has been encountered called "default" but it is not
+enclosed by a switch statement.  The label "default" is only legal
+inside the body of a switch
+statement. 
+%( expected
+An opening parenthesis was expected here. This must be the first token
+after a while, for, if, do or asm keyword.
+%) expected
+A closing parenthesis was expected here. This may indicate you have
+left out a parenthesis in an expression, or you have some other
+syntax error.
+%, expected
+A comma was expected here. This probably means you have left out the comma
+between two identifiers in a declaration list. It may also mean that
+the immediately preceding type name is misspelled, and has thus been
+interpreted as an identifier.
+%-s, too few values specified in *
+The list of values to the preprocessor -S option is incomplete.
+This should not happen if the preprocessor is being invoked by the
+compiler driver or HPD.
+%-s, too many values, * unused
+There were too many values supplied to a -S preprocessor option.
+%... illegal in non-prototype arg list
+The ellipsis symbol may only appear as the last item in a prototyped
+argument list. It may not appear on its own, nor may it appear after
+argument names that do not have types.
+%32 bit addressing illegal
+32 bit addressing (i.e. using 32 bit registers in an index expression)
+is illegal unless generating 386 or 486 code. Use a .386 or .486
+directive at the beginning of the file.
+%6301 instruction illegal
+This instruction is for the 6301 and is illegal unless an appropriate
+option is used, e.g.
+
+opt	h301
+%6801 instruction illegal
+The 6801 instructions can only be used if an appropriate
+option is used, to allow 6801, 68HC11 or 6301 instructions. E.g.
+
+opt	z01
+%68hc11 instruction illegal
+68HC11 instructions can only be used if the HC11 option is
+used, e.g.
+
+opt	HC11
+%68hc11/6301 instruction illegal
+This instruction is only implemented in the 68HC11 and 6301
+processors. Use an HC11 or H301 option, e.g.
+
+opt	HC11
+%80186 instruction/addressing mode
+An instruction or addressing mode not supported by the 8088/8086 was
+encountered. Use a .186, .286. .386 or .486 directive to allow these.
+%80286 instruction
+An instruction peculiar to the 80286
+encountered. Use a .286. .386 or .486 directive to allow these.
+%80386 instruction/addressing mode
+An instruction or addressing mode peculiar to the 80386
+encountered. Use a .386 or .486 directive to allow these.
+%80486 instruction/addressing mode
+An instruction or addressing mode peculiar to the 80486
+encountered. Use a .486 directive to allow these.
+%: expected
+A colon is missing in a case label, or after the keyword "default".
+This often occurs when a semicolon is accidentally typed instead of
+a colon.
+%; expected
+A semicolon is missing here. The semicolon is used as a terminator in
+many kinds of statements, e.g. do .. while, return etc.
+%= expected
+An equal sign was expected here.
+%] expected
+A closing square bracket was expected in an array declaration or
+an expression using an array index.
+%a parameter may not be a function
+A function parameter may not be a function. It may be a pointer to
+a function, so perhaps a "*" has been omitted from the declaration.
+%absolute expression required
+An absolute expression is required in this context.
+%add_reloc - bad size
+This is an internal error that should never happen. The assembler may
+be corrupted, and should be re-installed from the original distribution
+disks.
+%argument * conflicts with prototype
+The argument specified (argument 1 is the left most argument) of this
+function declaration does not agree with a previous prototype for this
+function.
+%argument -w* ignored
+The -W argument should not have a negative argument less than
+-9. Warning levels range from -9 to 9.
+%argument list conflicts with prototype
+The argument list in a function definition is not the same as a previous
+prototype for that function. Check that the number and types of the
+arguments are all the same.
+%argument redeclared: *
+The specified argument is declared more than once in the same argument list.
+%arguments redeclared
+The arguments of the function have been declared differently in two or more places.
+%arithmetic overflow in constant expression
+A constant expression has been evaluated by the code generator
+that has resulted in a value that is too big for the type of
+the expression, e.g. trying to store the value 256 in a "char".
+%array dimension on *[] ignored
+An array dimension on a function parameter is ignored, because the argument is
+actually converted to a pointer when passed. Thus arrays of any size may
+be passed.
+%array dimension redeclared
+An array dimension has been declared as a different non-zero value from
+its previous declaration. It is acceptable to redeclare the size of an
+array that was previously declared with a zero dimension, but not otherwise.
+%array index out of bounds
+An array is being indexed with a constant value that is less than zero, or greater
+than or equal to the number of elements in the array.
+%assertion
+An internal error has occured in the compiler. Contact HI-TECH technical support.
+%assertion failed: *
+This is an internal error. Contact HI-TECH Software technical support.
+%attempt to modify const object
+Objects declared "const" may not be assigned to or modified in any
+other way..
+%auto variable * should not be qualified
+An auto variable should not have qualifiers such as "near" or "far" associated
+with it. Its storage class is implicitly defined by the stack organization.
+%bad #if ... defined() syntax
+The defined() pseudo-function in a preprocessor expression
+requires its argument to be a single name. The name must start with
+a letter. It should be enclosed in parentheses.
+%bad '-p' format
+The "-P" option given to the linker is malformed.
+%bad -a spec: *
+The format of a -A specification, giving address ranges to the linker,
+is invalid. The correct format is:
+
+-Aclass=low-high
+
+where class is the name of a psect class, and low and high are hex
+numbers.
+%bad -m option: -m*
+The code generator has been passed a -M option that it does not
+understand. This should not happen if it is being invoked by a
+standard compiler driver.
+%bad -q option *
+The first pass of the compiler has been invoked with a -Q option,
+to specify a type qualifier name, that is badly formed.
+%bad arg (*) to tysize
+This is an internal error that should not happen. If this occurs, re-install
+the compiler from the original distribution disks, as it could represent
+a corrupted executable file.
+%bad arg to *l
+The *L directive should be followed by either ON or OFF.
+This turns listing on or off respectively.
+%bad arg to -b
+The argument supplied to "-B" is invalid.
+%bad arg to e: *
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad arg to extraspecial
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad arg to im
+The opcode "IM" only takes the constants 0, 1 or 2 as an argument.
+%bad bconfloat - *
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad bit address
+This bit address is invalid. Bit addresses for the 8051
+may range from 0 to 255.
+%bad bit number
+A bit number must be an absolute expression in the range
+0-7.
+%bad bitfield type
+A bitfield may only have a type of int.
+%bad character const
+This character constant is badly formed.
+%bad character in extended tekhex line *
+This is an internal error in objtohex and should never occur.
+%bad checksum specification
+A checksum list supplied to the linker is syntatically incorrect.
+%bad combination of flags
+The combination of options supplied to objtohex is invalid.
+%bad complex relocation
+The linker has been asked to perform complex relocation
+that is not syntactically correct. Probably means a corrupted
+object file.
+%bad confloat - *
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad conval - *
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad dimensions
+The code generator has been passed a declaration that
+results in an array having a zero dimension.
+%bad dp/nargs in openpar: dp = *
+This is an internal error in the preprocessor. It should
+not happen.
+%bad element count expr
+There is an error in the intermediate code. Try re-installing the
+compiler from the distribution disks, as this could be caused by a
+corrupted file.
+%bad float operand size
+The operand size for a DF pseudo-op must be either .L for
+long (4 byte) floating point values, or .D for double (8 byte)
+floats.
+%bad gn
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad high address in -a spec
+The high address given in a -A specification is invalid: it
+should be a valid number, in decimal, octal or hexadecimal radix.
+The radix is specified by a trailing O (for octal) or H for
+hex. Decimal is default.
+%bad int. code
+The code generator has been passed input that is not syntatically
+correct.
+%bad load address in -a spec
+The load address given in a -A specification is invalid: it
+should be a valid number, in decimal, octal or hexadecimal radix.
+The radix is specified by a trailing O (for octal) or H for
+hex. Decimal is default.
+%bad low address in -a spec
+The low address given in a -A specification is invalid: it
+should be a valid number, in decimal, octal or hexadecimal radix.
+The radix is specified by a trailing O (for octal) or H for
+hex. Decimal is default.
+%bad mod	'+' for	how = *
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad non-zero node in call graph
+The linker has encountered a top level node in the call graph
+that is referenced from lower down in the call graph. This
+probably means the program has indirect recursion, which is
+not allowed when using a compiled stack.
+%bad object code format
+The object code format of this object file is invalid. This probably
+means it is either truncated, corrupted, or not a HI-TECH object
+file.
+%bad op * to revlog
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad op * to swaplog
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad op: *
+This is caused by an error in the intermediate code file. You may
+have run out of disk (or RAMdisk) space for temporary files.
+%bad operand size
+This instruction requires an operand size of byte. Any other
+size is illegal.
+%bad operand to seg
+The seg operator requires an argument which refers either to a symbol
+or a psect. Its operand may not be an unevaluated expression, e.g.
+the sum of two external symbols.
+%bad origin format in spec
+The origin format in a -p option is not a validly formed
+decimal, octal or hex number. A hex number must have a
+trailing H.
+%bad popreg
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad popreg *
+This is an internal compiler error. Contact HI-TECH Software technical support.
+%bad pragma *
+The code generator has been passed a "pragma" directive that it
+does not understand.
+%bad psnext list
+This is an internal assembler error. Contact HI-TECH technical
+support with full details of the code that caused this error.is 
+%bad pushreg
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad pushreg: *
+This is an internal compiler error. Contact HI-TECH Software technical support.
+%bad putwsize
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad record type *
+This indicates that the object file is not a valid
+HI-TECH object file.
+%bad relocation type
+This is an internal assembler error. Contact HI-TECH technical
+support with full details of the code that caused this error.is
+%bad ret_mask
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad segment fixups
+This is an obscure message from objtohex that is not
+likely to occur in practice.
+%bad segspec *
+The segspec option (-G) to the linker is invalid. The correct
+form of a segspec option is along the following lines:
+
+-Gnxc+o
+
+where n stands for the segment number, x is a multiplier
+symbol, c is a constant (multiplier) and o is a constant
+offset. For example the option
+
+-Gnx4+16
+
+would assign segment selectors starting from 16, and incrementing
+by 4 for each segment, i.e. in the order 16, 20, 24 etc.
+%bad size in -s option
+The size part of a -S option is not a validly
+formed number. The number must be a decimal, octal
+or hex number. A hex number needs a trailing H, and
+an octal number a trailing O. All others are assumed
+to be decimal.
+%bad size list
+The first pass of the compiler has been invoked with a -Z option,
+specifying sizes of types, that is badly formed.
+%bad storage class
+The storage class "auto" may only be used inside a function. A function
+parameter may not have any storage class specifier other than
+"register".
+If this error is issued by the code generator, it could mean that
+the intermediate code file is invalid. This could be caused
+by running out of disk (or RAMdisk) space.
+%bad string '*' in psect pragma
+The code generator has been passed a "pragma psect" directive
+that has a badly formed string. "Pragma psect" should be followed
+by something of the form "oldname=newname".
+%bad switch size *
+This is an internal compiler error. Contact HI-TECH Software technical support.
+%bad sx
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad u usage
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%bad variable syntax
+There is an error in the intermediate code file. This could be caused by
+running out of disk (or RAMdisk) space for temporary files.
+%bad which (*) after i
+This is an internal compiler error. Contact HI-TECH Software technical support.
+%binary digit expected
+A binary digit was expected. The format for a binary number is
+
+	0Bxxx
+
+where xxx is a string of zeroes and ones, e.g.
+
+	0B0110
+%bit field too large (* bits)
+The maximum number of bits in a bit field is the same as the
+number of bits in an "int".
+%bug: illegal __ macro *
+This is an internal error in the preprocessor that
+should not happen.
+%can't allocate space for port variables: *
+"Port" variables may only be declared "extern" or have an
+absolute address associated via the "@ address" construct. They
+may not be declared in such a way that would require the compiler
+to allocate space for them.
+%can't be both far and near
+It is illegal to qualify a type as both far and near.
+%can't be long
+Only "int" and "float" can be qualified with "long". Thus combinations
+like "long char" are illegal.
+%can't be register
+Only function parameters or auto (local) variables may be declared
+"register".
+%can't be short
+Only "int" can be modified with short. Thus combinations like "short float" are illegal.
+%can't be unsigned
+There is no such thing as an unsigned floating point number.
+%can't call an interrupt function
+A function qualified "interrupt" can't be called from other functions.
+It can only be called by a hardware (or software) interrupt. This is
+because an interrupt function has special function entry and exit code
+that is appropriate only for calling from an interrupt. An
+"interrupt" function can call other non-interrupt functions.
+%can't create *
+The named file could not be created. Check that all directories in the
+path are present.
+%can't create cross reference file *
+The cross reference file could not be created. Check that
+all directories are present. This can also be caused by the
+assembler running out of memory.
+%can't create temp file
+%can't create temp file *
+The compiler could not create the temporary file named. Check that all the
+directories in the file path exist.
+%can't create xref file *
+An output file for the cross reference could not be created.
+%can't enter abs psect
+This is an internal assembler error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%can't find space for psect * in segment *
+The named psect cannot be placed in the specified segment.
+This probably means your code has got too big for the
+specified ROM space (using -A options).
+%can't generate code for this expression
+This expression is too difficult for the code generator to handle.
+Try simplifying the expression, e.g. using a temporary variable
+to hold an intermediate result.
+%can't have 'port' variable: *
+The qualifier "port" can be used only with pointers or absolute variables.
+You cannot define a port variable as the compiler does not allocate space
+for port variables. You can declare an external port variable.
+%can't have 'signed' and 'unsigned' together
+The type modifiers signed and unsigned cannot be used together
+in the same declaration, as they have opposite meaning.
+%can't have array of functions
+You can't have an array of functions. You can however have an array
+of pointers to functions. The correct syntax for an array of pointers
+to functions is "int (* arrayname[])();". Note that parentheses are
+used to associate the star (*) with the array name before the
+parentheses denoting a function.
+%can't have pointer to bit
+Bit variables as implemented in the 8051 compiler are not addressable
+via pointers, so a pointer to a bit is not allowed.
+%can't initialise auto aggregates
+You can't initialise structures or arrays local to a function unless
+they are declared "static".
+%can't initialize a basepage variable
+A basepage variable can't be initialized, as the basepage is RAM and is
+not initialized at program start.
+%can't initialize arg
+A function argument can't have an initialiser. The initialisation of
+the argument happens when the function is called and a value is
+provided for the argument by the calling function.
+%can't mix proto and non-proto args
+A function declaration can only have all prototyped arguments (i.e.
+with types inside the parentheses) or all K&R style args (i.e. only
+names inside the parentheses and the argument types in a declaration
+list before the start of the function body).
+%can't open
+A file can't be opened - check spelling.
+%can't open *
+The named file could not be opened. Check the spelling and the
+directory path. This can also be caused by running out of memory.
+%can't open * file *
+The assembler could not open an include or source file. Check the
+spelling.
+%can't open avmap file *
+A file required for producing Avocet format symbol files
+is missing. Try re-installing the compiler.
+%can't open command file *
+The command file specified could not be opened
+for reading. Check spelling!
+%can't open file *
+The named file could not be opened. Check spelling. This can
+also be caused by running out of memory.
+%can't open include file *
+The named include file could not be opened. Check spelling.
+This can also be caused by running out of memory, or running
+out of file handles.
+%can't reopen *
+The compiler could not reopen a temporary file it had just created.
+%can't take address of register variable
+A variable declared "register" may not have storage allocated for it
+in memory, and thus it is illegal to attempt to take the address of
+it by applying the "&" operator.
+%can't take sizeof func
+Functions don't have sizes, so you can't take use the "sizeof"
+operator on a function.
+%can't take this address
+The expression which was the object of the "&" operator is not one
+that denotes memory storage ("an lvalue") and therefore its address
+can not be defined.
+%can't use a string in an #if
+The preprocessor does not allow the use of strings in #if
+expressions.
+%cannot get memory
+The linker is out of memory! This is unlikely
+to happen, but removing TSR's etc is the cure.
+%cannot open
+A file cannot be opened - check spelling.
+%cannot open *
+The file specified cannot be opened. Check spelling.
+%cannot open include file *
+The named include file could not be opened for
+reading by the preprocessor. Check the spelling of the
+filename. If it is a standard header file, not in the
+current directory, then the name should be enclosed in
+angle brackets (<>) not quotes.
+%cast type must be scalar or void
+A typecast (an abstract type declarator enclosed in parentheses)
+must denote a type which is either scalar (i.e. not an array or a
+structure) or the type "void".
+%char const too long
+A character constant enclosed in single quotes may not contain more
+than one character.
+%close error (disk space?)
+When the compiler closed a temporary file, an error was reported.
+The most likely cause of this is that there was insufficient space
+on disk for the file. Note that temporary files may be created on a
+RAM disk, so even if your hard disk has ample space it is still
+possible to get this error.
+%closing quote expected
+A newline (end of line) was encountered before a matching closing
+quote was seen. This could be caused by the closing quote having
+been omitted, or by an extra quote character being inserted in the
+string without an escape character (\\) preceding it.
+%common symbol psect conflict: *
+A common symbol has been defined to be in more than
+one psect.
+%complex relocation not supported for -r or -l options yet
+The linker was given a -R or -L option with file that
+contain complex relocation. This is not yet supported.
+%conflicting fnconf records
+This is probably caused by multiple run-time startoff
+module. Check the linker arguments, or "Object Files..." in HPD.
+
+%conflicting operand sizes
+This instruction has more than one operand size specified.
+They are incompatible.
+%constant conditional branch
+A conditional branch (generated by an "if" statement etc.)
+always follows the same path. This may indicate an expression
+with missing or badly placed parentheses, causing the evaluation
+to yield a value different to what you expected, or it may be
+because you have written something like "while(1)". To produce
+an infinite loop, use "for(;;)".
+%constant conditional branch: possible use of = instead of == 
+There is an expression inside an if or other conditional construct, where
+a constant is being assigned to a variable. This may mean you have inadvertentley
+used an assignment (=) instead of a compare (==).
+%constant expression required
+In this context an expression is required that can be evaluated to a
+constant at compile time.
+%constant left operand to ?
+The left operand to a conditional operator (?) is constant, thus the result of
+the tertiary operator ?: will always be the same.
+%constant operand to || or &&
+One operand to the logical operators || or && is a constant. Check
+the expression for missing or badly placed parentheses.
+%constant relational expression
+There is a relational expression that will always be true or false. This may be
+because e.g. you are comparing an unsigned number with a negative value, or
+comparing a variable with a value greater than the largest number it can
+represent.
+%control line * within macro expansion
+A preprocessor control line (one starting with a #) has been
+encountered while expanding a macro. This should not happen.
+%declaration of * hides outer declaration
+An object has been declared that has the same name as an outer
+declaration (i.e. one outside and preceding the current function or
+block). This is legal, but can lead to accidental use of one variable
+when the outer one was intended.
+%declarator too complex
+This declarator is too complex for the compiler to handle. Examine
+the declaration and find a way to simplify it. If the compiler finds
+it too complex, so will anybody maintaining the code.
+%default case redefined
+There is only allowed to be one "default" label in a switch
+statement. You have more than one.
+%deff not supported in cp/m version
+The CP/M hosted assembler does not support floating point.
+%degenerate signed comparison
+There is a comparision of a signed value with the most negative value possible
+for this type, such that the comparision will always be true or false. E.g.
+
+char	c;
+
+if(c >= -128)
+
+will always be true, because an 8 bit signed char has a maximum negative value
+of -128.
+%degenerate unsigned comparison
+There is a comparision of an unsigned value with zero, which will always be
+true or false. E.g.
+
+unsigned char    c;
+
+if(c >= 0)
+
+will always be true, because an unsigned value can never be less than zero.
+
+%digit out of range
+A digit in this number is out of range of the radix for the number,
+e.g. using the digit 8 in an octal number, or hex digits A-F in a
+decimal number. An octal number is denoted by the digit string
+commencing with a zero, while a hex number starts with "0X" or "0x".
+%dimension required
+Only the most significant (i.e. the first) dimension in a
+multi-dimension array may not be assigned a value. All succeeding
+dimensions must be present.
+%direct addressing required
+Direct or indexed addressing is required for bit operations.
+Extended addressing cannot be used.
+%directive not recognized
+An assembler directive is unrecognized. Check spelling.
+%divide by zero in #if, zero result assumed
+Inside a #if expression, there is a division by
+zero which has been treated as yielding zero.
+%division by zero
+A constant expression that was being evaluated involved a division by zero.
+%double float argument required
+The printf format specifier corresponding to this argument is %f or similar,
+and requires a floating point expression. Check for missing or extra
+format specifiers or arguments to printf.
+%duplicate -d flag
+Only one -d flag can be given to the linker.
+%duplicate -d or -h flag
+The linker will accept only one -d or -h option
+with a file name.
+%duplicate -m flag
+The linker only likes to see one -m flag, unless one
+of them does not specify a file name. Two map file names
+are more than it can handle!
+%duplicate base register
+Only one base register, i.e. only one of BP and BX may
+be used in a 16 bit indexed addressing form.
+%duplicate case label
+There are two case labels with the same value in this switch statement.
+%duplicate case label *
+There is more than one case label with this value in a switch statement.
+%duplicate displacement in operand
+The operand on this instruction has two offsets. Only one
+is permitted.
+%duplicate fnconf directive
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%duplicate index register
+Only one index register (SI or DI) may be used in a 16 bit
+indexed form.
+%duplicate label *
+The same name is used for a label more than once in this function.
+Note that the scope of labels is the entire function, not just the
+block that encloses a label.
+%duplicate qualifier
+There are two occurences of the same qualifier in this type specification.
+This can occur either directly or through the use of a typedef. Remove
+the redundant qualifier.
+%duplicate qualifier key *
+This qualifier key (given via a -Q option, has been used twice.
+%duplicate qualifier key * (*)
+P1 has been given a duplicate qualifer key by the compiler driver. This
+should not occur if the standard driver is being used.
+%duplicate qualifier name *
+A duplicate qualifier name has been specified to P1 via a -Q option. This
+should not occur if the standard compiler drivers are used.
+%duplicate qualifier*
+There are two qualifiers with the same name or key letter.
+%end of file within macro argument
+A macro argument has not been terminated. This probably means the closing
+parenthesis has been omitted from a macro invocation.
+%end statement inside include file or macro
+An end statement has been encountered inside an include file
+or macro. There should be one end statement only, at the end
+of the main source file.
+%entry point multiply defined
+There is more than one entry point defined in the object
+files given the linker.
+%enum tag or { expected
+After the keyword "enum" must come either an identifier that is or
+will be defined as an enum tag, or an opening brace.
+%eof in #asm
+An end of file has been encountered inside a #asm block. This
+probably means the #endasm is missing or misspelt.
+%eof inside conditional
+END-of-FILE was encountered while scanning for an "endif"
+to match a previous "if".
+%eof inside macro def'n
+End-of-file was encountered while processing a macro definition.
+This means there is a missing "endm" directive.
+%eof on string file
+P1 has encountered an unexpected end-of-file while re-reading its file
+used to store constant strings before sorting and merging. This is most
+probably due to running out of disk space. Check free disk space, OR
+RAM disk size. The RAM disk may be too small, if it is used for
+temporary files.
+%error closing output file
+The compiler detected an error when closing a file. This most
+probably means there is insufficient disk space, but note that the
+file could be on a RAM disk, so even if you have ample space on your
+hard disk, this error can still occur. If this is the case, increase
+the size of your ram disk or move your temporary file area onto
+the hard disk.
+%error in format string
+There is an error in the format string here. The string has been
+interpreted as a printf() style format string, and it is not
+syntactically correct. If not corrected, this will cause unexpected
+behaviour at run time.
+%esp not permitted as index register
+ESP is not permitted as an index register.
+%expand - bad how
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%expand - bad which
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%expected '-' in -a spec
+There should be a minus sign (-) between the high and
+low addresses in a -A spec, e.g.
+
+-AROM=1000h-1FFFh
+%exponent expected
+A floating point constant must have at least one digit after the "e"
+or "E".
+%expression error
+There is a syntax error in this expression, OR
+there is an error in the intermediate code file. This could be
+caused by running of disk (or RAMdisk) space.
+%expression generates no code
+This expression generates no code. Check for things like leaving
+off the parentheses in a function call.
+%expression stack overflow at op *
+Expressions in #if lines are evaluated using a stack with a size
+of 128. It is possible for very complex expressions to overflow
+this. Simplify the expression.
+%expression syntax
+This expression is badly formed and cannot be parsed by the
+compiler.
+%expression too complex
+This expression has caused overflow of the compiler's internal stack
+and should be re-arranged or split into two expressions.
+%external declaration inside function
+A function contains an "extern" declaration. This is legal but is
+invariably A Bad Thing as it restricts the scope of the function
+declaration to the function body. This means that if the compiler
+encounters another declaration, use or definition of the extern
+object later in the same file, it will no longer have the earlier
+declaration and thus will be unable to check that the declarations
+are consistent. This can lead to strange behaviour of your program
+or signature errors at link time. It will also hide any previous
+declarations of the same thing, again subverting the compiler's type
+checking. As a general rule, always declare "extern" variables and
+functions outside any other functions.
+%fail directive: *
+A programmer generated FAIL directive has been assembled. This
+normally is used as a configuration safeguard.
+%filename work buffer overflow
+A filename constructed while looking for an include
+file has exceeded the length of an internal buffer. Since
+this buffer is 4096 bytes long, this is unlikely to happen.
+%fixup overflow referencing *
+The linker was asked to relocate (fixup) an item that would
+not fit back into the space after relocation. For example this
+will occur if a byte size object is initialized with an address
+that is bigger than 255.
+%fixup overflow referencing * 
+An attempt was made to fixup (relocate) an address, but
+the resultant value was too large to fit in the space
+allowed. This is probably caused by some user-written
+assembler, or by incorrect addresses at link time, or
+by code exceeding the maximum size (e.g. > 64K code
+on a processor with a 16 bit address bus).
+%flag * unknown
+This option used on a "PSECT" directive is unknown to the assembler.
+%float param coerced to double
+Where a non-prototyped function has a parameter declared as "float",
+the compiler convert this into a "double float". This is because the
+default C type conversion conventions provide that when a floating
+point number is passed to a non-prototyped function, it will be
+converted to double. It is important that the function declaration
+be consistent with this convention.
+%floating exponent too large
+The exponent of the floating point number is too large. For the Z80 the
+largest floating point exponent is decimal 19.
+%floating number expected
+The arguments to the "DEFF" pseudo-op must be valid floating point
+numbers.
+%form length must be >= 15
+The length of the listing page must be at least
+15 lines. You can't get a decent listing otherwise!
+%formal parameter expected after #
+The stringization operator # (not to be confused with the leading #
+used for preprocessor control lines) must be followed by a formal
+macro parameter. If you need to stringize a token, you will need to
+define a special macro to do it, e.g.
+
+#define	__mkstr__(x)	#x
+
+then use __mkstr__(token) wherever you need to convert a token
+into a string.
+%function * appears in multiple call graphs: rooted at *
+This function can be called from both main line code and
+interrupt code. Use the reentrant keyword, if this compiler
+supports it, or recode to avoid using local variables
+or parameters, or duplicate the function.
+%function * is never called
+This function is never called. This may not represent a problem,
+but space could be saved by removing it. If you believe this function
+should be called, check your source code.
+%function body expected
+Where a function declaration is encountered with K&R style arguments
+(i.e. argument names but no types inside the parentheses) a function
+body is expected to follow.
+%function declared implicit int
+Where the compiler encounters a function call of a function whose
+name is presently undefined, the compiler will automatically declare
+the function to be of type "int", with unspecified (K&R style)
+parameters. If a definition of the function is subsequently
+encountered, it is possible that its type and arguments will be
+different from the earlier implicit declaration, causing a compiler
+error. The solution is to ensure that all functions are defined or
+at least declared before use, preferably with prototyped parameters.
+If it is necessary to make a forward declaration of a function, it
+should be preceded with the keywords "extern" or "static" as
+appropriate.
+%function does not take arguments
+This function has no parameters, but it is called here with
+one or more arguments.
+%function is already 'extern'; can't be 'static'
+This function was already declared extern, possibly through an implicit
+declaration. It has now been redeclared static, but this redeclaration is
+invalid. If the problem has arisen because of use before definition, either
+move the definition earlier in the file, or place a static forward definition
+earlier in the file, e.g.
+
+static int fred(void);
+%function or function pointer required
+Only a function or function pointer can be the subject of a function
+call. This error can be produced when an expression has a syntax
+error resulting in a variable or expression being followed by an
+opening parenthesis ("(") which denotes a function call.
+%function's local data too large
+The size of the stack frame for this function is greater than that
+allowable. The size is limited by the size of the internal RAM on the
+8051.
+%functions can't return arrays
+A function can return only a scalar (simple) type or a structure. It cannot
+return an array.
+%functions can't return functions
+A function cannot return a function. It can return a function
+pointer. A function returning a pointer to a function could be
+declared like this: int (* (name()))(). Note the many parentheses
+that are necessary to make the parts of the declaration bind
+correctly.
+%functions nested too deep
+This error is unlikely to happen with C code, since C cannot
+have nested functions!
+%garbage after operands
+There is something on this line after the operands other
+than a comment. This could indicate an operand error.
+%garbage on end of line
+There were non-blank and non-comment characters after the end of the operands
+for this instruction. Note that a comment must be started with a semicolon.
+%hc11 and h301 are incompatible
+The options HC11 and H301 cannot be used together, since these
+two processors have incompatible instruction sets.
+%hex digit expected
+After "0x" should follow at least one of the hex digits 0-9 and A-F
+or a-f.
+%ident records do not match
+The object files passed to the linker do not have matching ident
+records. This means they are for different processor types.
+%identifier expected
+Inside the braces of an "enum" declaration should be a
+comma-separated list of identifiers.
+%identifier redefined: *
+This identifier has already been defined. It cannot be defined
+again.
+%identifier redefined: * (from line *)
+This identifier has been defined twice. The 'from line ' value
+is the line number of the first declaration.
+%illegal # command *
+The preprocessor has encountered a line starting with #, but which is not
+followed by a recognized control keyword. This probably means the keyword
+has been misspelt. Legal control keywords are:
+
+assert  asm     define  elif    else    endasm
+endif   error   if      ifdef   ifndef  include
+line    pragma  undef
+%illegal #if line
+There is a syntax error in the expression following #if.
+Check the expression to ensure it is properly constructed.
+%illegal #undef argument
+The argument to #undef must be a valid name. It must start
+with a letter.
+%illegal '#' directive
+The compiler does not understand the "#" directive. It is probably a
+misspelling of a pre-processor "#" directive.
+%illegal -o flag
+This -o flag is illegal. A -o option to the linker
+must have a filename. There should be no space between the filenam
+and the -o, e.g.
+
+-ofile.obj
+%illegal -p flag
+The -p flag needs stuff after it. This is used for defining
+psect mapping to the linker.
+%illegal addressing mode
+This addressing mode is not permitted.
+%illegal character (*)
+An illegal character has been encountered in the input. The value in
+parentheses is the octal value of the character. Locate the line
+and remove the character.
+%illegal character (0*)
+There is an illegal character in the input. This is the octal
+code for the character.
+%illegal character * in #if
+There is a character in a #if expression that has no business
+being there. Valid characters are the letters, digits and those
+comprising the acceptable operators.
+%illegal conversion
+This expression implies a conversion between imcompatible types,
+e.g. a conversion of a structure type into an integer.
+%illegal conversion between pointer types
+A pointer of one type (i.e. pointing to a particular kind of object)
+has been converted into a pointer of a different type. This will
+usually mean you have used the wrong variable, but if this is
+genuinely what you want to do, use a typecast to inform the compiler
+that you want the conversion and the warning will be suppressed.
+%illegal conversion of integer to pointer
+An integer has been assigned to or otherwise converted to a pointer
+type. This will usually mean you have used the wrong variable,
+but if this is
+genuinely what you want to do, use a typecast to inform the compiler
+that you want the conversion and the warning will be suppressed.
+%illegal conversion of pointer to integer
+A pointer has been assigned to or otherwise converted to a integral
+type. This will usually mean you have used the wrong variable,
+but if this is
+genuinely what you want to do, use a typecast to inform the compiler
+that you want the conversion and the warning will be suppressed.
+%illegal flag *
+This flag is unrecognized.
+%illegal function qualifier(s)
+A qualifier such as "const" or "volatile" has been applied to a
+function. These qualifiers only make sense when used with an lvalue
+(i.e. an expression denoting memory storage). Perhaps you left out a
+star ("*") indicating that the function should return a pointer to a
+qualified object.
+%illegal indirect addressing
+Indirect addressing is allowed in the 8051 assembler only with
+certain operands:
+
+	mov	a,@Rn	where Rn is R0 or R1
+	movx	a,@dptr
+	movc	a,@a+dptr
+%illegal initialisation
+You can't initialise a "typedef" declaration, because it does not
+reserve any storage that could be initialised.
+%illegal or too many -p flags
+There are too many -p options to the linker. Combine
+some of them.
+%illegal record type
+There is an error in an object file. This is either an invalid object
+file, or an internal error in the linker. Try recreating the object file.
+%illegal register for indirection
+An operand has indirection on a register that is not permitted
+to be used for indirection.
+%illegal relocation size: *
+There is an error in the object code format read by the linker. This
+either means you are using a linker that is out of date, or that
+there is an internale error in the assembler or linker.
+%illegal relocation type: *
+An object file contained a relocation record with an illegal relocation type.
+This probably means the file is corrupted or not an object file.
+%illegal stack index
+The index used in a cop-processor instruction must be
+an absolute value 0-7.
+%illegal switch *
+This command line option was not understood.
+%illegal type for array dimension
+An array dimension must be either an integral type or an enumerated
+value.
+%illegal type for index expression
+An index expression must be either integral or an enumerated value.
+%illegal type for switch expression
+A "switch" operation must have an expression that is either an
+integral type or an enumerated value.
+%illegal use of void expression
+A void expression has no value and therefore you can't use it
+anywhere an expression with a value is required, e.g. as an operand
+to an arithmetic operator.
+%image too big
+The program image being constructed by objtohex is too big
+for its virtual memory system.
+%implicit conversion of float to integer
+A floating point value has been assigned or otherwise converted to
+an integral type. This could result in truncation of the floating
+point value. A typecast will make this warning go away.
+%implicit return at end of non-void function
+A function which has been declared to return a value has an
+execution path that will allow it to reach the end of the function
+body, thus returning without a value. Either insert a return
+statement with a value, or if the function is not to return a value,
+declare it "void".
+%implict signed to unsigned conversion
+A signed number is being assigned or otherwise converted to a larger
+unsigned type. Under the ANSI "value preserving" rules, this will
+result in the signed value being first sign-extended to a signed
+number the size of the target type, then converted to unsigned
+(which involves no change in bit pattern). Thus an unexpected sign
+extension can occur. To ensure this does not happen, first convert
+the signed value to an unsigned equivalent, e.g. if you want to
+assign a signed char to an unsigned int, first typecast the char
+value to "unsigned char".
+%inappropriate 'else'
+An "else" keyword has been encountered that cannot be associated
+with an "if" statement. This may mean there is a missing brace or
+other syntactic error.
+%inappropriate break/continue
+A "break" or "continue" statement has been found that is not
+enclosed in an appropriate control structure. "continue" can only be
+used inside a "while", "for" or "do while" loop, while "break" can
+only be used inside those loops or a "switch" statement.
+%include files nested too deep
+Macro expansions  and include file handling have filled up the assembler's
+internal stack. The maximum number of open macros and include files is 30.
+%incompatible intermediate code version; should be *
+The intermediate code file produced by P1 is not the correct version for
+use with this code generator. This is either that incompatible versions of
+one or more compilers have been installed in the same directory, or
+a temporary file error has occured leading to corruption of a temporary
+file. Check the setting of the TEMP environment variable. If it
+refers to a long path name, change it to something shorter.
+%incompatible intermediate code version; should be *.*
+This error may indicate that the code generator is imcompatible with the first
+pass (P1). This could occur if you installed an old compiler in the same
+directory as a newer compiler for a different processor. Use separate installation
+directories.
+%incomplete * record body: length = *
+An object file contained a record with an illegal size.
+This probably means the file is truncated or not an object file.
+%incomplete record
+The object file passed to objtohex is corrupted.
+%incomplete record: *
+An object code record is incomplete. This is probably due
+to a corrupted or invalid object module. Re-compile the source
+file, watching for out of disk space errors etc.
+%incomplete record: type = * length = *
+This indicates that the object file is not a valid
+HI-TECH object file, or that it has been truncated,
+possibly due to running out of disk or RAMdisk space.
+
+%inconsistent storage class
+A declaration has conflicting storage classes. Only one storage
+class should appear in a declaration.
+%inconsistent type
+Only one basic type may appear in a declaration, thus combinations
+like "int float" are illegal.
+%index offset too large
+An offset on a Z80 indexed addressing form must lie in the range -128 to 127.
+%indirection on illegal register
+Indirection on this register is not possible.
+%initialisation syntax
+The initialisation of this object is syntactically incorrect. Check
+for the correct placement and number of braces and commas.
+%initializer in 'extern' declaration
+A declaration containing the keyword "extern" has an initialiser.
+This overrides the "extern" storage class, since to initialise an
+object it is necessary to define (i.e. allocate storage for ) it.
+%insufficient memory for macro def'n
+There is not sufficient memory to store a macro definition.
+%integer constant expected
+A colon appearing after a member name in a structure declaration
+indicates that the member is a bitfield. An integral constant must
+appear after the colon to define the number of bits in the
+bitfield.
+%integer expression required
+In an "enum" declaration, values may be assigned to the members, but
+the expression must evaluate to a constant of type "int".
+%integral argument required
+An integral argument is required for this format specifier. Check
+the number and order of format specifiers and corresponding arguments.
+%integral type required
+This operator requires operands that are of integral type only.
+%invalid disable: *
+This is an internal preprocessor error that should not occur.
+
+%invalid number syntax
+The syntax of a number is invalid. This can be, e.g. use of 8 or 9
+in an octal number, or other malformed numbers.
+%invalid operand size
+The operand size specified for this instruction is
+invalid. Check the programmers reference manual for this chip.
+%invalid short addressing
+Short addressing (e.g. 8 bit PC relative) has been used where this
+is not possible.
+%invalid short addressing override
+A short addressing override has been used in conjunction with an addressing
+mode that makes this invalid.
+%jump out of range
+A short jump ("JR") instruction has been given an address that is more than
+128 bytes away from the present location. Use the "JP" opcode instead.
+%jump target out of range
+The address that this jump refers to is too far away to be
+reached by this jump. Use a longer jump form, or a short
+branch around a direct jump.
+%label identifier expected
+An identifier denoting a label must appear after "goto".
+%large stack offset for *
+The named variable has been allocated on the stack at an offset greater than
+128. This will still work correctly, but will result in larger, slower
+code. It is recommended that any auto (local to a function) variables be
+declared before any arrays. Having an array at a large offset does not
+cause any problems.
+%lexical error
+An unrecognized character or token has been seen in the input.
+%line does not have a newline on the end
+The last line in the file is missing the newline (linefeed, hex 0A)
+from the end. Some editors will create such files, which can cause
+problems for include files. The ANSI C standard requires all source
+files to consist of complete lines only.
+%line too long
+This line is too long. It will not fit into the compiler's internal
+buffers. It would require a line over 1000 characters long to do
+this, so it would normally only occur as a result of macro
+expansion.
+%local illegal outside macros
+The "LOCAL" directive is only legal inside macros. It defines local labels
+that will be unique for each invocation of the macro.
+%local psect '*' conflicts with global psect of same name
+A local psect may not have the same name as a global psect.
+%logical type required
+The expression used as an operand to "if", "while" statements or to
+boolean operators like ! and && must be a scalar integral type.
+%long argument required
+A long argument is required for this format specifier. Check the number
+and order of format specifiers and corresponding arguments.
+%macro * wasn't defined
+A macro name specified in a -U option to the preprocessor was not
+initially defined, and thus cannot be undefined.
+%macro argument after % must be absolute
+If the charactyer "%" is used to force evaluation of macro argument, the
+argument must be an expression that evaluates to an absolute constant.
+%macro argument may not appear after local
+The list of labels after the directive "LOCAL" may not include any of the
+formal parameters to the macro.
+%macro expansions nested too deep
+Macro expansions in the assembler are nested too deep. The limit is
+30 macros and include files nested at one time.
+%macro name used as symbol
+A macro name has been used as a symbol. This is not permitted as the macro
+name does not have a simple value.
+%macro work area overflow
+The total length of a macro expansion has exceeded the size of
+an internal table. This table is normally 8192 bytes long. Thus
+any macro expansion must not expand into a total of more than 8K bytes.
+%member * redefined
+This name of this member of the struct or union has already been
+used in this struct or union.
+%members cannot be functions
+A member of a structure or a union may not be a function. It may be
+a pointer to a function. The correct syntax for a function pointer
+requires the use of parentheses to bind the star ("*") to the
+pointer name, e.g. "int (*name)();".
+%metaregister * can't be used directly
+This is an internal compiler error. Contact HI-TECH Software technical support.
+%mismatched comparision
+A comparison is being made between a variable or expression and a constant value
+which is not in the range of possible values for that expression, e.g. if
+you compare an unsigned character to the constant value 300, the result will
+always be false (not equal) since an unsigned character can NEVER equal 300.
+As an 8 bit value it can represent only 0-255.
+%misplaced '?' or ':', previous operator is *
+A colon operator has been encountered in a #if expression
+that does not match up with a corresponding ? operator. Check
+parentheses etc.
+%misplaced constant in #if
+A constant in a #if expression should only occur in syntactically
+correct places. This error is most probably caused by omission of
+an operator.
+%missing ')'
+A closing parenthesis was missing from this expression.
+%missing '=' in class spec
+A class spec needs an = sign, e.g.
+
+-Ctext=ROM
+%missing ']'
+A closing square bracket was missing from this expression.
+%missing arg to -a
+The -a option requires the name of a qualifier as an argument.
+%missing arg to -u
+The -U (undefine)  option needs an argument, e.g.
+
+-U_symbol
+%missing arg to -w
+The -W option (listing width) needs
+a numeric argument.
+%missing argument to 'pragma psect'
+The pragma 'psect' requires an argument of the form oldname=newname
+where oldname is an existing psect name known to the compiler, and
+newname is the desired new name. Example:
+
+#pragma psect	bss=battery
+%missing basic type: int assumed
+This declaration does not include a basic type, so int has
+been assumed. This declaration is not illegal, but it is
+preferable to include a basic type to make it clear what
+is intended.
+%missing key in avmap file
+A file required for producing Avocet format symbol
+files is corrupted. Try re-installing the compiler.
+%missing memory key in avmap file
+A file required for producing Avocet format symbol
+files is corrupted. Try re-installing the compiler.
+%missing name after pragma 'inline'
+The 'inline' pragma has the syntax:
+
+	#pragma inline func_name
+
+where func_name is the name of a function which is
+to be expanded to inline code. This pragma has no
+effect except on functions specially recognized by the
+code generator.
+%missing name after pragma 'printf_check'
+The pragma 'printf_check', which enable printf style format string
+checking for a function, requires a function name, e.g.
+
+#pragma printf_check sprintf
+%missing number after % in -p option
+The % operator in a -p option (for rounding boundaries)
+must have a number after it.
+%missing number after pragma 'pack'
+The pragma 'pack' requires a decimal number as argument. For example
+
+#pragma pack(1)
+
+will prevent the compiler aligning structure members onto anything
+other than one byte boundaries. Use this with caution as some
+processors enforce alignment and will not operate correctly if
+word fetches are made on odd boundaries (e.g. 68000, 8096).
+%missing operand size
+The operand size for this instruction is missing. It must be
+supplied.
+%missing size for align
+The size of alignment required has not been specified. Use
+ALIGN.W for word alignment.
+%missing size for dc
+A DC directive requires a size specifier, e.g. DC.B for byte.
+%mixed 16 and 32 bit index registers
+An indexed addressing mode must use only 16 bit or only
+32 bit registers. They may not be used together.
+%mod by zero in #if, zero result assumed
+A modulus operation in a #if expression has a zero divisor. The
+result has been assumed to be zero.
+%module has code below file base of *
+This module has code below the address given, but
+the -C option has been used to specify that a binary
+output file is to be created that is mapped to this
+address. This would mean code from this module would have
+to be placed before the beginning of the file! Check for
+missing psect directives in assembler files.
+%multi-byte constant * isn't portable
+Multi-byte constants are not portable, and in fact will be
+rejected by later passes of the compiler (this error comes
+from the preprocessor).
+%multiple free: *
+This is an internal compiler error. Contact HI-TECH Software technical support.
+%multiply defined symbol *
+This symbol has been defined in more than one place in this module.
+%multiply defined symbol: *
+This symbol has been defined in more than one module.
+%negative index offset
+The index offset used here is negative. Index offsets must be
+positive.
+%nested comments
+This warning is issued when nested comments are found.
+A nested comment may indicate that a previous closing comment
+marker is missing or malformed.
+%no #asm before #endasm
+A #endasm operator has been encountered, but there
+was no previous matching #asm.
+%no arg to -o
+The assembler requires that an output file name argument be supplied after
+the "-O" option. No space should be left between the -O and the filename.
+%no case	labels
+There are no case labels in this switch!
+%no case labels
+There are no case labels in this switch statement.
+%no end record
+This object file has no end record. This probably means
+it is not an object file.
+%no end record found
+An object file did not contain an end record.
+This probably means the file is corrupted or not an object file.
+%no file argument
+There was no file argument to the assembler.
+%no file arguments
+The assembler has been invoked without any file arguments. It cannot assemble
+anything.
+%no identifier in declaration
+The identifier is missing in this declaration. This error can also
+occur where the compiler has been confused by such things as missing
+closing braces.
+%no memory for string buffer
+P1 was unable to allocate memory for the longest string encountered,
+as it attempts to sort and merge strings. Try reducing the number or length
+of strings in this module.
+%no psect specified for function variable/argument allocation
+This is probably caused by omission of correct run-time startoff
+module. Check the linker arguments, or "Object Files..." in HPD.
+%no space for macro def'n
+The assembler has run out of memory.
+%no start record: entry point defaults to zero
+None of the object files passed to the linker contained a start record.
+The start address of the program has been set to zero. This may be
+harmless, but it is recommended that you define a start address in your
+startup module by using the "END" directive.
+%no. of arguments redeclared
+The number of arguments in this function declaration does not agree
+with a previous declaration of the same function.
+%nodecount = *
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%non-constant case label
+A case label in this switch statement has a value which is not
+a constant.
+%non-prototyped function declaration: *
+A function has been declared using old-style (K&R) arguments. It is
+preferable to use prototype declarations for all functions. If the
+function has no arguments, declare it as e.g. "int func(void)".
+%non-scalar types can't be converted
+You can't convert a structure, union or array to anything else. You
+can convert a pointer to one of those things, so perhaps you left out
+an ampersand ("&").
+%non-void function returns no value
+A function that is declared as returning a value has a "return"
+statement that does not specify a return value.
+%not a member of the struct/union *
+This identifier is not a member of the structure or union type with
+which it used here.
+%not a variable identifier: *
+This identifier is not a variable; it may be some other kind of
+object, e.g. a label.
+%not an argument: *
+This identifier that has appeared in a K&R stype argument declarator
+is not listed inside the parentheses after the function name. Check
+spelling.
+%object code version is greater than *
+The object code version of an object module is higher than the highest
+version the linker is known to work with. Check that you are using
+the correct linker.
+%object file is not absolute
+The object file passed to objtohex has relocation items in it.
+This may indicate it is the wrong object file, or that the
+linker or objtohex have been given invalid options.
+%one segment override only permitted
+Only one segment override is permitted in an instruction.
+%only functions may be qualified interrupt
+The qualifier "interrupt" may not be applied to anything except a
+function.
+%only functions may be void
+A variable may not be "void". Only a function can be "void".
+%only lvalues may be assigned to or modified
+Only an lvalue (i.e. an identifier or expression directly denoting
+addressable storage) can be assigned to or otherwise modified. A
+typecast does not yield an lvalue. To store a value of different
+type into a variable, take the address of the variable, convert it
+to a pointer to the desired type, then dereference that pointer,
+e.g. "*(int *)&x = 1" is legal whereas "(int)x = 1" is not.
+%only register storage class allowed
+The only storage class allowed for a function parameter is
+"register".
+%oops! -ve number of nops required!
+An internal error has occured. Contact HI-TECH.
+%operand error
+The operand to this opcode is invalid. Check you assembler reference manual
+for the proper form of operands for this instruction.
+%operand size undefined
+The size of an operand is neither explicitly defined, nor can the
+assembler determine it from register usage. Add an explicit ,word or ,byte
+or whatever.
+%operands of * not same pointer type
+The operands of this operator are of different pointer types. This
+probably means you have used the wrong pointer, but if the code is
+actually what you intended, use a typecast to suppress the error
+message.
+%operands of * not same type
+The operands of this operator are of different pointer. This
+probably means you have used the wrong variable, but if the code is
+actually what you intended, use a typecast to suppress the error
+message.
+%operator * in incorrect context
+An operator has been encountered in a #if expression
+that is incorrectly placed, e.g. two binary operators are
+not separated by a value.
+%option not supported
+This is option is currently not supported.
+%out of far memory
+The compiler has run out of far memory. Try removing TSR's etc. If your
+system supports EMS memory, the compiler will be able to use up to 64K
+of this, so if it is not enable, try enabling EMS.
+%out of far memory (wanted * bytes)
+The code generator could not allocate any more far memory. Try reducing
+the memory used by TSR's etc.
+%out of memory
+The compiler has run out of memory. If you have unnecessary TSRs
+loaded, remove them. If you are running the compiler from inside
+another program, try running it directly from the command prompt.
+Similarly, if you are using HPD, try using the command line compiler
+driver instead.
+%out of near memory
+The compiler has run out of near memory. This is probably due to
+too many symbol names. Try splitting the program up, or reducing
+the number of unused symbols in header files etc.
+%out of space in macro * arg expansion
+A macro argument has exceeded the length of an internal
+buffer. This buffer is normally 4096 bytes long.
+%output file cannot be also an input file
+The linker has detected an attempt to write its output file
+over one of its input files. This cannot be done, because it needs to
+simultaneously read and write input and output files.
+%page width must be >= 41
+The listing page widthe must be at least 41 characters. Any less will not
+allow a properly formatted listing to be produced.
+%phase error
+The assembler has calculated a different value for a symbol
+on two different passes. This is probably due to bizarre use
+of macros or conditional assembly.
+%phase error in macro args
+The assembler has detected a difference in the definition of a symbol on
+the first and a subsequent pass.
+%phase error on temporary label
+The assembler has detected a difference in the definition of a symbol on
+the first and a subsequent pass.
+%pointer required
+A pointer is required here. This often means you have used "->" with
+a structure rather than a structure pointer.
+%pointer to * argument required
+A pointer argument is required for this format specifier. Check the number
+and order of format specifiers and corresponding arguments.
+%pointer to non-static object returned
+This function returns a pointer to a non-static (e.g. automatic)
+variable. This is likely to be an error, since the storage associated
+with automatic variables becomes invalid when the function returns.
+%pop immediate illegal
+It is not possible to pop into an immediate value.
+%pop of allreg!!
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%pop of register *
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%popreg	- bad reg *(*)
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%popreg - bad reg
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%popreg - trying to pop * with 0* regbits - can't do it!
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%portion of expression has no effect
+Part of this expression has no side effects, and no effect on
+the value of the expression.
+%possible pointer truncation
+A pointer qualifed "far" has been assigned to a default pointer or a
+pointer qualified "near", or a default pointer has been assigned to
+a pointer qualified "near". This may result in truncation of the
+pointer and loss of information, depending on the memory model in
+use.
+%preprocessor assertion failure
+The argument to a preprocessor #assert directive has evaluated
+to zero. This is a programmer induced error.
+%probable missing '}' in previous block
+The compiler has encountered what looks like a function or other
+declaration, but the preceding function has not been ended with a
+closing brace. This probably means that a closing brace has been
+omitted from somewhere in the previous function, although it may
+well not be the last one.
+%psect '*' re-orged
+This psect has its address multiply defined. Check
+the linker options.
+%psect * cannot be in classes *
+A psect cannot be in more than one class. This is either due to assembler
+modules with conflicting class= options, or use of the -C option
+to the linker.
+%psect * in more than one group
+This psect has been defined to be in more than one group.
+%psect * not loaded on * boundary
+This psect has a relocatability requirement that is not
+met by the load address given in a -P option. For
+example if a psect must be on a 4K byte boundary, you
+could not start it at 100H.
+%psect * not relocated on * boundary
+This psect is not relocated on the required
+boundary. Check the relocatability of the psect and correct
+the -p option. if necessary.
+%psect * not specified in -p option
+This psect was not specified in a "-P" option to the linker. It has
+been linked at the end of the program, which is probably not where
+you wanted it.
+%psect * re-orged
+This psect has had its start address specified
+more than once.
+%psect * selector value redefined
+The selector value for this psect has been defined more than once.
+%psect * type redefined: *
+This psect has had its type defined differently by different modules.
+This probably means you are trying to link imcompatible object modules,
+e.g. linking 386 flat model code with 8086 real mode code.
+%psect exceeds max size: *
+The psect has more bytes in it than the maximum allowed.
+%psect is absolute: *
+This psect is absolute and should not have an address specified in
+a -P option.
+%psect may not be local and global
+A psect may not be declared to be local if it has already been declared to
+be (default) global.
+%psect origin multiply defined: *
+The origin of this psect is defined more than once.
+%psect property redefined
+A property of a psect has been defined in more than place to be
+different.
+%psect reloc redefined
+The relocatability of this psect has been defined differently
+in two or more places.
+%psect selector redefined
+The selector associated with this psect has been defined differently
+in two or more places.
+%psect size redefined
+The maximum size of this psect has been defined differently
+in two or more places.
+%push of allreg!!
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%push of register *
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%pushreg	- bad reg
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%pushreg	- bad reg *(*)
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%pushreg - trying to push * with 0* regbits - can't do it!
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%radix value out of range
+The value given for the current radix is out of range. It must
+be between 2 and 16.
+%read error on *
+The linker encountered an error trying to read this file.
+%record too long
+This indicates that the object file is not a valid
+HI-TECH object file.
+%record too long: *
+An object file contained a record with an illegal size.
+This probably means the file is corrupted or not an object file.
+%recursive function calls: 
+These functions (or function) call each other recursively.
+One or more of these functions has statically allocated
+local variables (compiled stack). Either use the reentrant
+keyword (if supported with this compiler) or recode to
+avoid recursion.
+%recursive macro definition of *
+The named macro has been defined in such a manner that
+expanding it causes a recursive expansion of itself!
+%redefining macro *
+The macro specified is being redefined, to something different
+to the original definition. If you want to deliberately redefine
+a macro, use #undef first to remove the original definition.
+%redundant & applied to array
+The address operator "&" has been applied to an array. Since using
+the name of an array gives its address anyway, this is unnecessary
+and has been ignored.
+%reginit!!!???
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%regused	- bad arg to g
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%relocation error
+It is not possible to add together two relocatable quantities. A constant
+may be added to a relocatable value, and two relocatable addresses in the
+same psect may be subtracted. An absolute value must be used in various
+places where the assembler must know a value at assembly time.
+%relocation offset * out of range 0..*
+An object file contained a relocation record with a relocation offset
+outside the range of the preceding text record. This means the object
+file is probably corrupted.
+%relocation too complex
+The complex relocation in this expression is too big to be inserted
+into the object file.
+%remsym error
+Internal error. Contact HI-TECH technical support.
+%rept argument must be >= 0
+The argument to a "REPT" directive must be greater than zero.
+%restore without matching save
+A restore (to restore options) has been done before a corresponding save.
+%revlog - bad op
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%save/restore too deep
+The save directive has been used too many times without matching
+restores.
+%scale value invalid
+The scale value in the operand is invalid. It may only be 1, 2, 4
+or 8.
+%scale value must be a constant
+The scale value in an operand must be an absolute constant.
+%seek error: *
+The linker could not seek when writing an output file.
+%segment * overlaps segment *
+The named segments have overlapping code or data. Check the addresses being
+assigned by the "-P" option.
+%signatures do not match: *
+The specified function has different signatures in different modules.
+This means it has been declared differently, e.g. it may have been
+prototyped in one module and not another. Check what declarations for
+the function are visible in the two modules specified and make sure they
+are compatible.
+%signed bitfields not supported
+Only unsigned bitfields are supported. If a bitfield is declared to
+be type "int", the compiler still treats it as unsigned.
+%simple integer expression required
+A simple integral expression is required after the operator "@",
+used to associate an absolute address with a variable.
+%simple type required for *
+A simple type (i.e. not an array or structure)is required as an operand to this operator.
+%size error
+You have attempted to store a value in a space that is too small, e.g. trying
+to initialize a byte location with an address that is 16 bits.
+%sizeof yields 0
+The code generator has taken the size of an object and found
+it to be zero. This almost certainly indicates an error
+in your declaration of a pointer, e.g. you may have declared
+a pointer to a zero length array. In general, pointers to arrays
+are of little use. If you require a pointer to an array of objects
+of unknown length, you only need a pointer to a single object
+that can then be indexed or incremented.
+%storage class illegal
+A structure or union member may not be given a storage class. Its
+storage class is determined by the storage class of the structure.
+%storage class redeclared
+A variable or function has been re-declared with a different storage
+class. This can occur where there are two conflicting declarations,
+or where an implicit declaration is followed by an actual
+declaration.
+%strange character * after ##
+A character has been seen after the token catenation operator
+## that is neither a letter nor a digit. Since the result of this
+operator must be a legal token, the operands must be tokens containing
+only letters and digits.
+%strange character after # *
+There is an unexpected character after #.
+%string expected
+The operand to an "asm" statement must be a string enclosed in
+parentheses.
+%string too long
+This string is too long. Shorten it.
+%struct/union member expected
+A structure or union member name must follow a dot (".") or arrow
+("->").
+%struct/union redefined: *
+A structure or union has been defined more than once.
+%struct/union required
+A structure or union identifier is required before a dot (".").
+%struct/union tag or '{' expected
+An identifier denoting a structure or union or an opening brace must
+follow a "struct" or "union" keyword.
+%structure too big for function return
+The size of the structure type of this function is too big to allow
+the code generator to generate code to return it.
+%symbol * cannot be global
+There is an error in an object file, where a local symbol has been
+declared global. This is either an invalid object file, or an internal
+error in the linker. Try recreating the object file.
+%symbol * has erroneous psect: *
+There is an error in an object file, where a symbol has an invalid psect.
+This is either an invalid object file, or an internal
+error in the linker. Try recreating the object file.
+%symbol * is not external
+This symbols is not external, and should not be in an EXTERN directive.
+It is probably defined locally, and thus should be PUBLIC or GLOBAL.
+%symbol * not defined in #undef
+The symbol supplied as argument to #undef was not already defined.
+This is a warning only, but could be avoided by including the
+#undef in a #ifdef ... #endif block.
+%syntax error
+A syntax error has been detexted. This could be caused a number of things.
+%syntax error in -a spec
+The -A spec is invalid. A valid -A spec should be
+something like:
+
+-AROM=1000h-1FFFh
+%syntax error in checksum list
+There is a syntax error in a checksum list read by the linker. The
+checksum list is read from standard input by the linker, in response
+to an option. Re-read the manual on checksum listt.
+%text does not start at 0
+Code in some things must start at zero. Here it doesn't.
+%text offset too low
+You aren't likely to see this error. Rhubarb!
+%text record has bad length: *
+There is an error in an object file.
+This is either an invalid object file, or an internal
+error in the linker. Try recreating the object file.
+%text record has length too small: *
+This indicates that the object file is not a valid
+HI-TECH object file.
+%this function too large - try reducing level of optimization
+A large function has been encountered when using a -Og (global
+optimization) switch. Try re-compiling without the
+global optimization, or reduce the size of the function.
+%this is a struct
+This identifier following a "union" or "enum" keyword is already the tag
+for a structure, and thus should only follow the keyword "struct".
+%this is a union
+This identifier following a "struct" or "enum" keyword is already the tag
+for a union, and thus should only follow the keyword "union".
+%this is an enum
+This identifier following a "struct" or "union" keyword is already the tag
+for an enumerated type, and thus should only follow the keyword "enum".
+%too few arguments
+This function requires more arguments than are provided in this
+call.
+%too few arguments for format string
+There are too few arguments for this format string. This would result
+in a garbage value being printed or converted at run time.
+%too many (*) enumeration constants
+There are too many enumeration constants in an enumerated type.
+The maximum number of enumerated constants allowed in an enumerated
+type is 512.
+%too many (*) structure members
+There are too many members in a structure or union. The maximum number
+of members allowed in one structure or union is 512.
+%too many arguments
+This function does not accept as many arguments as there are here.
+%too many arguments for format string
+There are too many arguments for this format string. This is harmless,
+but may represent an incorrect format string.
+%too many arguments for macro
+A macro may only have up to 31 parameters, as per the C Standard.
+%too many arguments in macro expansion
+There were too many arguments supplied in a macro invocation.
+The maximum number allowed is 31.
+%too many cases in switch
+There are too many case labels in this switch statement. The maximum
+allowable number of case labels in any one switch statement is 511.
+%too many comment lines - discarding
+The compiler is generating assembler code with embedded comments,
+but this function is so large that an excessive number of source
+line comments are being generated. This has been suppressed so
+that the optimizer will not run out of memory loading comment lines.
+%too many errors
+There were so many errors that the compiler has given up. Correct
+the first few errors and many of the later ones will probably go away.
+%too many include directories
+A maximum of 7 directories may be specified for the preprocessor
+to search for include files.
+%too many initializers
+There are too many initializers for this object. Check the number of
+initializers against the object definition (array or structure).
+%too many macro parameters
+There are too many macro parameters on this macro definition.
+%too many nested #* statements
+#if, #ifdef etc. blocks may only be nested to a maximum
+of 32.
+%too many psect class specifications
+There are too many psect class specifications (-C options)
+%too many psect pragmas
+Too many "pragma psect" directives have been used.
+%too many psects
+There are too many psects! Boy, what a program!
+%too many qualifier names
+There are too many qualifier names specified.
+%too many relocation items
+Objtohex filled up a table. This program is just way
+too complex!
+%too many segment fixups
+There are too many segment fixups in the object file given to objtohex.
+%too many segments
+There are too many segments in the object file given to objtohex.
+%too many symbols
+There are too many symbols for the assemblers symbol table. Reduce the number
+of symbols in your program. If it is the linker producing this error,
+suggest changing some global to local symbols.
+%too many temporary labels
+There are too many temporary labels in this assembler file. The assembler
+allows a maximum of 2000 temporary labels.
+%too may symbols
+There are too many symbols for the assemblers symbol table. Reduce the number
+of symbols in your program.
+%too much indirection
+A pointer declaration may only have 16 levels of indirection.
+%too much pushback
+This error should not occur, and represents an internal
+error in the preprocessor.
+%type conflict
+The operands of this operator are of incompatible types.
+%type redeclared
+The type of this function or object has been redeclared. This can
+occur because of two incompatible declarations, or because an
+implicit declaration is followed by an incompatible declaration.
+%type specifier reqd. for proto arg
+A type specifier is required for a prototyped argument. It is not
+acceptable to just have an identifier.
+%unbalanced paren's, op is *
+The evaluation fo a #if expression found mismatched parentheses.
+Check the expression for correct parenthesisation.
+%undefined enum tag: *
+This enum tag has not been defined.
+%undefined identifier: *
+This symbol has been used in the program, but has not been
+defined or declared. Check for spelling errors.
+%undefined label: *
+This label has not been defined anywhere in the current function. Check
+for spelling errors.
+%undefined operand size
+The size of the operand to this instruction was not defined.
+Use ",byte" or ",word", or ",dword" as appropriate.
+%undefined public symbol *
+A symbol declared PUBLIC is not defined in this module. Use GLOBAL or EXTRN
+or define the symbol.
+%undefined shift (* bits)
+An attempt has been made to shift a value by a number of bits equal to or
+greater than the number of bits in the data type, e.g. shifting a long by
+32 bits. This will produce an undefined result on many processors. This is
+non-portable code and is flagged as having undefined results by the C Standard.
+%undefined struct/union
+This structure or union tag is undefined. Check spelling etc.
+%undefined struct/union: *
+The specified structure or union tag is undefined. Check spelling
+etc.
+%undefined symbol *
+The named symbol is not defined, and has not been specified "GLOBAL".
+%undefined symbol * in #if, 0 used
+A symbol on a #if expression was not a defined preprocessor
+macro. For the purposes of this expression, its value has been
+taken as zero.
+%undefined symbol:
+The symbol following is undefined at link time. This could be due
+to spelling error, or failure to link an appropriate module.
+%undefined symbols:
+A list of symbols follows that were undefined at link time.
+%undefined temporary label
+A temporary label has been referenced that is not defined. Note that a temporary
+label must have a number >= 0.
+%undefined variable: *
+This variable has been used but not defined at this point
+%unexpected end of file
+This probably means an object file has been truncated because of 
+a lack of disk (or RAMdisk) space.
+%unexpected eof
+An end-of-file was encountered unexpectedly. Check syntax.
+%unexpected text in #control line ignored
+This warning occurs when extra characters appear on the end of
+a control line, e.g.
+
+#endif something
+
+The "something" will be ignored, but a warning is issued. It is
+preferable (and in accordance with Standard C) to enclose the
+"something" as a comment, e.g.
+
+#endif	/* something */
+%unknown	predicate *
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%unknown addressing mode
+This addressing mode is not recognized by the assembler
+%unknown arg to opt
+This argument to OPT is not recognized.
+%unknown arg type to lpsize
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%unknown complex operator *
+There is an error in an object file. This is either an invalid object
+file, or an internal error in the linker. Try recreating the object file.
+%unknown directive
+This directive is not known to the assembler.
+%unknown fnrec type *
+This indicates that the object file is not a valid
+HI-TECH object file.
+%unknown option *
+This option to the preprocessor is not recognized.
+%unknown pragma *
+An unknow pragma directive was encountered.
+%unknown psect: *
+This psect has been listed in a -P option, but is not defined
+in any module within the program.
+%unknown qualifier '*' given to -a
+The -a option to P1 should have as its argument a defined qualifier name,
+either a standard qualifier or a qualifier introduced with the -Q option.
+%unknown record type: *
+An invalid object module has been read by the linker. It is either
+corrupted or not an object file.
+%unknown symbol type *
+The symbol type encountered is unknown to this linker.
+Check that the correct linker is being used.
+%unreachable code
+This section of code will never be executed, because there is no
+execution path by which it could be reached. Look for missing "break"
+statements inside a control structure like "while" or "for".
+%unreasonable matching depth
+This is an internal code generator error. Contact HI-TECH technical
+support with full details of the code that caused this error.
+%unrecognized argument to opt
+This argument to OPT is not recognized.
+%unrecognized option to -o: *
+The code generator has been given a -O option with an unknown
+modifier.
+%unrecognized option to -z: *
+The code generator has been passed a -Z option it does not understand.
+This should not happen if it is invoked with the standard driver.
+%unrecognized qualifer name after 'strings'
+The pragma 'strings' requires a list of valid qualifer names. For
+example
+
+#pragma	strings const code
+
+would add const and code to the current string qualifiers. If no
+qualifiers are specified, all qualification will be removed from
+subsequent strings. The qualifer names must be recognized by the
+compiler.
+%unterminated #if[n][def] block from line *
+A #if or similar block was not terminated with a matching
+#endif. The line number is the line on which the #if block
+began.
+%unterminated macro arg
+An argument to a macro is not terminated. Note that angle brackets ("<>") are
+used to quote macro arguments. 
+%unterminated string
+A string constant appears not to have a closing quote missing.
+%unterminated string in macro body
+A macro definition contains a string that lacks a closing
+quote.
+%unused constant: *
+This enumerated constant is never used. Maybe it isn't needed at all.
+%unused enum: *
+This enumerated type is never used. Maybe it isn't needed at all.
+%unused label: *
+This label is never used. Maybe it isn't needed at all.
+%unused member: *
+This structure member is never used. Maybe it isn't needed at all.
+%unused structure: *
+This structure tag is never used. Maybe it isn't needed at all.
+%unused typedef: *
+This typedef is never used. Maybe it isn't needed at all.
+%unused union: *
+This union type is never used. Maybe it isn't needed at all.
+%unused variable declaration: *
+This variable is never used. Maybe it isn't needed at all.
+%unused variable definition: *
+This variable is never used. Maybe it isn't needed at all.
+%variable may be used before set: *
+This variable may be used before it has been assigned a value. Since it is
+an auto variable, this will result in it having a random value.
+%void function cannot return value
+A void function cannot return a value. Any "return" statement should
+not be followed by an expression.
+%while expected
+The keyword "while" is expected at the end of a "do" statement.
+%work buffer overflow *
+An internal preprocessor buffer has been filled. This buffer has a
+size of 4096 bytes.
+%write error (out of disk space?) *
+Probably means that the hard disk or RAM disk is
+full.
+%write error on *
+A write error occured on the named file. This probably means you have
+run out of disk space.
+%write error on object file
+An error was reported when the assembler was attempting to write an object file.
+This probably means there is not enough disk space.
+%wrong number of macro arguments for * - * instead of *
+A macro has been invoked with the wrong number of arguments.
+%{ expected
+An opening brace was expected here.
+%} expected
+A closing brace was expected here.

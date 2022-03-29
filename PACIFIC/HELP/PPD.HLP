@@ -1,0 +1,316 @@
+INDEX 7 106 PPD
+1390 88 Compiler optimizations
+7777 106 Editor Searching
+6183 11 Heap size
+30 28 Memory models and chip types
+13403 20 PPD command line options
+11807 27 String search
+6792 21 User defined commands
+%Memory models and chip types
+Available processor types are:
+
+8086 or 8088    This selection will produce code that will run on any
+                8086 family processor.
+
+80186, 80188 or 80286
+                This chip selection will allow the compiler to generate
+                code using instructions only present on these processors
+                (or on later processors like the 80386).
+
+Small           This memory model allows one 64K code segment and one
+                64K data and stack segment.  More data may be accessed
+                via far pointers and variables.
+
+Large           The large model allows multiple code and data segments.
+                The only limit on code or data is memory size.  Due to
+                the 8086 architecture, the stack is still limited to 64K.
+
+Hardware (8087) floating point
+                This toggle will tell the compiler whether to generate 
+                inline 8087 code or calls to the floating point library.
+                8087 code will not run unless an 8087, 80287 or 80387
+                co-processor is present on an 80486 or Pentium processor
+                is being used.  Code using the floating point library
+                calls will still take advantage of an 8087 because the
+                floating point library auto-detects the presence of a
+                co-processor.
+
+%Compiler optimizations
+An "optimization" is a transformation performed by the compiler on
+a program to make it smaller and/or faster.
+
+The compiler performs many optimizations, some automatically, some
+only when requested.  The Optimization dialog box allows selection
+of optimizations to be performed when compiling:
+
+Global:         Global optimization is performed one function at
+                a time and aims to optimize the use of registers
+                within whole functions.  When used, this allocates
+                variables to registers based on analysis of which
+                variables will benefit most. This optimization can
+                be quite time consuming on large functions.  It is
+                possible for the code generator to run out of
+                memory when performing global optimization. The
+                function size should be reduced if this occurs.
+
+Peephole:       Peephole optimization is a process of examining
+                generated assembler code and "improving" it. This
+                includes redundant load/store optimization, branch
+                optimization, and substitution of faster or shorter
+                instructions.  Whole functions are optimized at a
+                time, and it is possible for the optimizer to run
+                out of memory on large functions.
+
+Assembler:      The assembler attempts to turn long branches or
+                jumps into short branches when this is used. This
+                does not use extra memory, but can increase the
+                compile time.
+
+Alignment:      The compiler includes an optional optimization pass
+                which aligns function entry points, code following
+                JMP instructions and labels within the code on
+                specified memory boundaries.  Alignment is userful
+                when producing code to for newer 80x86 processors
+                such as the 80386, 80486 and Pentium.  This pass
+                will be skipped if no alignments are specified.
+
+                Each class of alignment may be individually enabled
+                or disabled based on values entered in "Optimization"
+                dialog.  A value of 0 means that a particular form
+                of alignment is disabled.  Other valid alignments are
+                2, 4, 8 and 16.  Alignments of 2 are useful on 8086,
+                80186, 80286 and 80386SX processors.  4 is optimal
+                on the 80386, use 16 on the 80486 and Pentium.
+
+                When selecting alignment values bear in mind that
+                you are trading off code size for relatively minor
+                improvements in program performance considering that
+                the newer processors where large alignments help are
+                much much faster than earlier processors anyway.
+
+                For the best size/speed tradeoffs, suggested values
+                are as follows:
+
+                8088, 80C188          no alignment optimization
+                8086/186/286/386SX    function:2,  jump:2, label:2
+                80386DX               function:4,  jump:4, label:4
+                80486, Pentium        function:16, jump:4, label:4
+
+                The three alignment optimizations available are:
+
+Function:       This value specifies the memory alignment on which
+                C function entry points will be located.  This has
+                the least effect on program size of all alignments
+                and can improve performance of small functions on
+                the 80486 and Pentium.  Use 2 on 80286 processors,
+                4 on 80386 and 16 on 80486 and Pentium.
+
+Jump:           This value specifies a boundary on which code after
+                JMP instructions will be placed.  JMP alignment can
+                improve the performance of while(), for() switch()
+                and goto constructs, but has considerably more impact
+                on program size than function entry point alignment.
+                For 80386, 80486 and Pentium an alignment of 4 is a
+                good tradeoff.
+
+Label:          This value specifies the alignment which will be used
+                for compiler generated labels starting with "l" and
+                "L".  This optimization improves the performance of
+                if() constructs, switch() cases and other code which
+                performs conditional branches.  Note that this may
+                make code run slower where a conditional branch is not
+                taken, as NOP instructions will be used to pad before
+                each label.  Generally, values of 0, 2 or 4 should be
+                used for label alignment.  16 will cause a sustantial
+                code size increase for very speed improvement
+
+%Heap size
+The "heap size" value is placed in the .EXE file header to tell DOS
+how much heap and stack space should initially be allocated to the
+program.  With Pacific C, it is used to limit the size of "near"
+data and heap, there is no "far" heap as such because the Pacific C
+memory allocation routines use MS-DOS system calls to obtain memory.
+
+The heap size should be entered as a hexadecimal value between 0 and
+10000 (hex) inclusive.  The default value is 0, which tells Pacific C
+to use a default heap size of 64K bytes.  If a value larger than 64K
+is specified, it will not be accepted.
+
+%User defined commands
+The "User command setup" dialog allows four user defined external
+commands to be added to the Utility menu.  Each user defined command
+entry consists of two strings; the menu entry which will be displayed
+in the Utility menu, and the command line which will be executed by
+DOS when the menu item is selected.  Typically the user commands will
+be used to interface to external debuggers and editors.
+
+A number of macros may be used within user defined commands to allow
+substitution of useful filenames.  The available macros are:
+
+        $(EDIT)       Current PPD edit file
+        $(OUTFILE)    Current output file name
+        $(CWD)        Current working directory
+        $(LIB)        Compiler LIB directory path
+        $(INC)        Compiler INCLUDE directory path
+        $(PROJ)       Name of current project file
+
+For example, a user defined command which passes the current PPD
+edit file to an external editor called EDIT would be:
+
+        EDIT $(EDIT)
+%Editor Searching
+The editor allows search and search/replace forwards or backwards, using
+either simple strings, or "regular expressions".  The search/replace dialog
+can be accessed via several paths:
+
+1.      by using the WordStar style commands Ctrl-Q A and Ctrl-Q F.
+2.      by clicking the "Search" button in the editor window.
+3.      by pressing F2 in the editor window.
+4.      by the "Search ..." or "Replace ..." items in the "Edit" menu.
+
+The search/replace dialog allows both search and replace operations to be
+selected, starting from any of the search/replace commands.  The settings
+in the dialog will default to appropriate values based on the previous
+operation and the method used to activate the dialog.  Selection between
+search and replace operations is performed using the "Replace - F3" check
+box.  If performing a replace operation, the check box "Global - F5" allows
+an interactive global search/replace to be performed.  The "Replace all - F6"
+check box allows all instances of the search string to be replaced without
+asking.  You can select between case sensitive and case insensitive searching
+using the "Case sensitive - F4" check box.
+
+In addition to the search/replace commands which display the dialog, the
+editor also allows the previous search/replace operation to be repeated
+in either a forward or backward direction.  This can be achieved using the
+following key or mouse strokes:
+
+Search for NEXT:          Ctrl-L or Shift-F2 or click the NEXT button.
+Search for PREVIOUS:      Ctrl-L or Ctrl-F2 or click the PREV button.
+
+REGULAR EXPRESSION MATCHING
+
+Regular expressions are a generalization of "wild card" matching.  A
+regular expression can include literal text (e.g. "abcdef") or various
+special characters that are interepreted specially when comparing the
+search string with the text in the editor.  In brief, the special
+characters are:
+
+^       Match start of line
+$       Match end of line
+?       Match any character
+*       Repeat previous expression
+\( \)   Group a sequence
+[ ]     Specify a range or set of characters to match
+\       Escape a special character
+
+In more detail:
+
+^       Use at the beginning of a search string to anchor the search
+        to the beginning of the line, e.g.
+
+           ^#define
+
+        will match #define only if it is at the beginning of a line.
+
+$       Matches the end of a line, e.g.
+
+           0);$
+
+        will match "0);" only at the end of a line.
+
+?       matches any character, e.g. 
+
+          ??xyz?
+
+        would match any of:
+
+          "12xyzb", "..xyz1" or "AAxyzA"
+
+*       means any number of repetitions of the previous regular
+        expression.  The previous regular expression is either a
+        single character, or a parenthesized expression or range
+        as below. For example:
+
+           ab*
+
+        will match the letter 'a' followed by zero or more letters 'b'.
+
+\(  \)  These two character pairs enclose a regular expression that
+        can be the subject of the * repetition character, e.g
+
+           ab\(ab\)*
+
+        will match one or more sequences of "ab", e.g. "ababab". Note
+        that the first "ab" must be matched with "ab", and the sequence
+        inside the parentheses can match zero or more sequences of "ab".
+
+[   ]   These brackets are used to enclose a character range or set.
+        Within the brackets can be any number of single characters,
+        or pairs of characters separated by a dash. For example:
+
+          [ABCDEF0-9]
+
+        will match any upper case alphabetic from A to F, or any digit.
+        If it is desired to include a dash in the set, make it the first
+        or last character. Similarly, the right bracket (]) must be first
+        if it is to be part of the set. For example:
+
+          []a-f-]
+
+        will match any lower case alphabetic, ] or -.
+
+\       Escape any special character. Precede any of ?, *, $, ^ or [
+        to force them to be treated literally. For example:
+
+          \*\**
+
+        will match one or more asterisks in sequence.
+%String search
+The string search dialog is used to access a "grep" like utility which
+will perform a search of one or more files for a specified target string.
+The search string may consist of any sequence of characters, including
+spaces.  The default behaviour is to perform a case insensitive search
+where lower case and upper case characters are treated as equivalent.
+If the "Case sensitive - F4" check box is selected, a case sensitive
+search may be performed.
+
+The list of files to search may be specified either by typing a list
+of wildcards in the "File list:" edit line, or by selecting the check
+box: "Current project - F6".  The file list entered may consist of one
+or more file names or wildcards.  If the same file is selected by more
+than one wildcard, the file will only be searched once.  If "Current
+project" is selected, all source files in the current PPD project will be
+searched for the target string.  If you wish to search a user specified
+file list, select the "File list - F5" check box.
+
+The results of the search will be displayed in the "String search:" window.
+You may move between entries in this window using the mouse, window scroll
+bar, or the arrow/cursor keys on the keypad.  To select a search result,
+double click the mouse in its entry, or press enter when the desired line
+is highlighted.  When a selection is made, the selected file will be loaded
+into the PPD editor with the cursor and search highlight positioned on
+the selected text.
+
+The "Search F2" button in the "String search:" window may be used to search
+again without using the menu.
+%PPD command line options
+Pacific C is invoked by the PPD command. Options to the
+PPD command are:
+
+        /screen:25
+        /screen:28
+        /screen:43
+        /screen:50
+
+These options set the DOS screen size to the specified number
+of lines. A VGA or better display is needed for 50 lines, an
+EGA or better for the others.
+
+PPD will also take a file name, which may be a project file
+name or a source file name. For example:
+
+ppd /screen:43 testing
+
+will start up PPD in 43 line mode, and look for a file TESTING.PRJ
+or a file TESTING.C. A project file will be loaded, and a source
+file will be loaded into the editor.

@@ -1,0 +1,65 @@
+table 2 0
+PACC Compiler Options
+Option	Used to
+_
+-1	Generate 80186 code
+-2	Generate 80286 code
+-7	Generate inline 8087 or 80287 instructions
+_
+-ALf,j,l	Specify alignment boundaries for function entry points (f),
+	code after JMP instructions (j) and labels within the code.
+	(l). This option is used to enhance performance on 80386 and
+	80486 processors.  Allowable values are 0, 2, 4, 8 and 16.
+	The default is -AL0,0,0 for no alignment.  For the 80386
+	use -AL4,4,4 or -AL4,4,0.  For best performance on the 80486
+	use -AL16,16,4 or -AL16,4,0.  Code for older processors such
+	as the 80286 may run slightly faster if -AL2,2,2 is used.
+_
+-ASMLIST	Generate assembler listing files for each source file
+-Bs	Select the SMALL memory model (default)
+-Bl	Select the LARGE memory model
+-C	Compile to object files only
+-CRfile	Generate cross-reference listing "file"
+-Dmacro	Define preprocessor macro on command line, e.g. -Ddebug=1
+_
+-E	Use "editor" format for compiler errors
+-Efile	Redirect compiler errors to "file", e.g. -Etest.err
+-E+file	Redirect and append compiler errors onto "file"
+_
+-Esize	Specify the "heap size" for MS-DOS executables.  The "size"
+	value is placed in the .EXE file header to tell MS-DOS how
+	much memory should initially be allocated to the program.
+	The "size" value can be a positive decimal number or a hex
+	number ending with "H".  The legal range of values is 1000H
+	to FFFFFH.  If no "-Esize" option is used, FFFFFH will be
+	used by default and all available memory will be allocated
+	to the program.   For example: -E8192 (or -E2000H) allocates
+	8192 bytes of heap and stack space.
+_
+-Gfile	Generate source level symbol file for source level debugger
+-HELP	Display this help file
+-Hfile	Generate assembler level symbol file, e.g. -Gtest.sym
+-Ipath	Specify a directory pathname for include files
+-Llib	Specify a library to be scanned by the linker
+-Lf	Scan floating point printf() library.
+-Mfile	Request generation of a MAP file, e.g. -Mtest.map
+-Ofile	Specify output filename, e.g. -Otext.exe
+-O	Enable post-pass optimizer, reduces code size substantially
+-P	Tells PACC to pass assembler source files to the C pre-processor
+-PROTO	Generate function prototype information ".PRO files"
+-PSECTMAP	Display complete memory segment usage after linking
+-Q	Quiet mode, suppresses signon message.  Must be first option.
+-R	Links user code with _getargs() wildcard expansion routine.
+-S	Compile to assembler source files only
+-STRICT	Enable strict ANSI keyword conformance
+-Umacro	Undefine a predefined preprocessor macro, e.g. -UDOS
+-UNSIGNED	Make default character type unsigned char
+-V	Display compiler pass command lines
+-Wlevel	Set compiler warning level (-3 to 9, default 0), e.g. -W-2.
+-X	Eliminate local symbols from symbol table
+-Zg	Enable global optimization in the code generator
+_
+Usage:	PACC [options] [files]
+	where [options] consists of 0 or more of the options above and
+	[files] consists of any mix of C, AS, H and LIB files.  If no
+	options or files are specified, the user will be prompted.

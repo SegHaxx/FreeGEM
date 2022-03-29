@@ -1,0 +1,131 @@
+VTEST: GEM video driver tester
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  I wrote VTEST in the course of developing various GEM drivers over the
+years. Its original purpose was to test various code paths in the drivers 
+in the hope of flushing out bugs; it was used side-by-side with a known-good
+driver, to check that the test patterns would display in the same way on both
+drivers.
+
+  To use VTEST, simply run it from the GEM desktop, or at GEM startup with
+the command GEMVDI VTEST.APP.
+
+Tests
+~~~~~
+
+  VTEST contains 38 tests: 36 display test patterns, one timer test, and one
+keyboard test. Test patterns can be selected either from the main menu, or by 
+using the keyboard.
+
+  A lot of the tests will draw 64 shapes: the same pattern, in 4 colours and 
+4 writing modes, against 4 different backgrounds.
+
+  The tests are: 
+
+1. Boxes - displays a hatched box. This is aimed at the BOX_FILL function in a
+	  normal GEM driver.
+2. Lines 1 - draws a dashed line, at various angles. This is aimed at the 
+	  ABLINE routine.
+3. Text 1 - draws a string, at 1-pixel offsets. This should test normal text
+	  drawing, plus the optimised MONO8XHT routine if one is present.
+4. Text 2 - Tests text scaling.
+5. Text 3 - Tests text special effects (bold, underline, etc.)
+6. Text 4 - Tests text rotation.
+7. Text 5 - Tests text clipping.
+8. Text 6 - Tests justified text, in the four possible directions of rotation.
+9. Text 7 - Tests the ability to query the positions of justified text. GEM 
+           has two functions to do this; on the GEM/3 drivers I have tested,
+           they give different results, and neither seems to match the actual
+           text output.
+0. Blit 1 - Tests blitting (vro_cpyfm()), in drawing modes 0-4. Draws 16
+           rows, moving one pixel to the right between each row; since GEM 
+           frequently uses multiple-plane video modes, this is intended to
+           trigger both the normal case, and any optimisations for when the
+	   source and destination are byte-aligned.
+A. Blit 2 - Tests blitting when source and destination are overlapping.
+B. Blit 3 - Tests blitting a shape narrower than eight pixels (so that in a 
+           multiple-plane driver, it has to be clipped at both edges).
+C. Blit 4 - Tests 'transparent' blit (vrt_cpyfm()).
+D. Blit 5 - Tests 'transparent' blit (vrt_cpyfm()) at 1-pixel offsets.
+E. Blit 6 - Tests screen -> memory -> screen blit, in all 16 modes. The 
+	   first three columns are screen -> screen copies; the fourth is
+	   screen -> memory -> screen, and the fifth is the same, but the 
+	   memory buffer is vertically mirrored.
+F. Blit 7 - Tests blit clipping.
+G. GDP 1  - Tests round rectangles.
+H. GDP 2  - Tests filled round rectangles.
+I. GDP 3  - Tests filled pie slices.
+J. GDP 4  - Tests arcs.
+K. GDP 5  - Tests ellipses and circles.
+L. GDP 6  - Tests filled rectangles.
+M. Marker - Tests polymarkers.
+N. Lines 2 - Draws lines with different patterns, at different thicknesses.
+O. Contour fill. On a system that does not implement contour fill, like PC/GEM,
+  the 'bone' shapes will not be filled. On a system that does, those shapes 
+  in the top two quadrants should be filled to the blue border; in the bottom 
+  two quadrants, only as far as the vertical cyan bars.
+P. Palette. All colours supported by the driver will be displayed in the top
+  half of the screen. On a truecolour driver, the bottom half will be filled
+  with a colour gradient.
+Q. Boxes 2 - Fills rectangles with a number of patterns.
+R. Rectangle clip - Tests clipping of filled rectangles.
+S. Filled shape - Tests drawing a filled shape whose lines intersect.
+T. Text mode. Not supported by most PC/GEM drivers, except some early GEM/1 
+  specimens. If supported, switches to text mode and tests text output, 
+  cursor positioning, wrapping, and deletion to end of line and end of screen.
+  Press a key to leave text mode.
+U. User-defined fill. Sets up a user-defined fill containing 16 colours, and 
+  draws rectangles with it.
+V. Boxes 3. Tests drawing solid rectangles (fill style 1)
+W. Boxes 4. Tests drawing blank rectangles (fill style 0)
+X. Get pixel. PC/GEM does not implement this call. On systems that do, there
+  should be two columns of rectangles, whose colours should match, and details
+  beside each one of the colour and underlying pixel representation.
+Y. Cell array. PC/GEM does not implement this call. On systems that do, a 
+  4x4 cell array will be drawn in a variety of graphics modes.
+Z. Query cell array. PC/GEM does not implement this either. On systems that 
+  do, the window should be filled with repeated zooms of the menu bar and 
+  window title.
+
+The two other tests are:
+
+Timer: Tests the system timer. It will appear to lock up for some time, then 
+      display timer statistics:
+
+		Timer scale:	  The number of milliseconds between ticks, 
+				  as reported by GEM.
+		Ticks received:   Should equal 10 * timer scale.
+		In clock time:    How many seconds (according to DOS) those
+				  ticks took.
+		Calculated scale: The number of milliseconds between ticks,
+				  calculated from the above two fields. Should
+				  be close, if not equal, to the reported 
+				  timer scale.
+
+
+Keyboard: Tests keyboard input. Each keypress will display two values: 'kstate'
+         is the state of the shift keys; 'kreturn' is the scancode/ASCII 
+	 combination returned by the key. Click the mouse button to end the
+	 test.
+
+
+Legal Bits
+~~~~~~~~~~
+
+VTEST: GEM video driver tester
+Copyright 2007, 2012 John Elliott <jce@seasip.demon.co.uk>
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+

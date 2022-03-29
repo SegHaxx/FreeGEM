@@ -1,0 +1,73 @@
+table 3 0
+Editor Keys-
+Command	Key	WordStar Key
+_
+Character left	left arrow	ctrl-S
+Character right	right arrow	ctrl-D
+Word left	ctrl-left arrow	ctrl-A
+Word right	ctrl-right arrow	ctrl-F
+_
+Line up	up arrow	ctrl-E
+Line down	down arrow	ctrl-X
+Scroll up		ctrl-W
+Scroll down		ctrl-Z
+Page up	PgUp	ctrl-R
+Page down	PgDn	ctrl-C
+_
+Beginning of line	Home	ctrl-Q S
+End of line	End	ctrl-Q D
+Top of window		ctrl-Q E
+Bottom of window		ctrl-Q X
+Top of file	ctrl-Home	ctrl-Q R
+End of file	ctrl-End	ctrl-Q C
+Go to line		ctrl-Q G
+_
+Insert mode on/off	Ins	ctrl-V
+Insert CR at cursor		ctrl-N
+Open new line below cursor		ctrl-O
+_
+Delete char under cursor	Del	ctrl-G
+Delete char to left	Backspace	ctrl-H
+Delete word		ctrl-T
+Delete line		ctrl-Y
+Delete to end of line		ctrl-Q Y
+_
+Search	F2	ctrl-Q F
+Search and replace		ctrl-Q A
+Repeat last search: forwards	shift-F2	ctrl-L
+Repeat last search: backwards	ctrl-F2	ctrl-P
+_
+Mark block-begin		ctrl-K B
+Mark block-end		ctrl-K K
+Hide/display block		ctrl-K H
+_
+Go to block start		ctrl-Q B
+Go to block end		ctrl-Q K
+_
+Copy block		ctrl-K C
+Move block		ctrl-K V
+Delete block		ctrl-K Y
+_
+Cut to clipboard	alt-X	Shift-DEL
+Copy to clipboard	alt-C	
+Paste from clipboard	alt-V	Shift-INS
+_
+Read block from disk		ctrl-K R
+Write block to disk		ctrl-K W
+_
+New file		ctrl-K N
+Open file		ctrl-K O
+Save file		ctrl-K S
+_
+Set place marker (0-9)		ctrl-K n
+Go to place marker (0-9)		ctrl-Q n
+_
+Go to previous line		ctrl-Q P
+_
+Autoindent on/off		ctrl-Q I
+Set tab size		ctrl-Q T
+Zoom or unzoom window		ctrl-Q Z
+Indent current line or block		ctrl-Q >
+Outdent current line or block		ctrl-Q <
+Comment/uncomment line or block		ctrl-Q /
+Match parentheses/braces/brackets		ctrl-]

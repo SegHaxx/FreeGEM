@@ -1,0 +1,20 @@
+unbekannt 0
+unbekannt 0
+unbekannt 0
+unbekannt 0
+unbekannt 0
+unbekannt 0
+unbekannt 0
+unbekannt 0
+unbekannt 0
+unbekannt 0
+Harald 1295
+unbekannt 817
+Thomas Huth 653
+unbekannt 612
+unbekannt 260
+Thothy 115
+unknown 78
+unbekannt 0
+unbekannt 0
+unbekannt 0
